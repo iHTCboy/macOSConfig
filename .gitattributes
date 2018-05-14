@@ -1,0 +1,5 @@
+21世纪双语科技词典.dictionary filter=lfs diff=lfs merge=lfs -text
+懒虫简明英汉词典.dictionary filter=lfs diff=lfs merge=lfs -text
+新世纪英汉科技大词典.dictionary filter=lfs diff=lfs merge=lfs -text
+英汉汉英专业词典.dictionary filter=lfs diff=lfs merge=lfs -text
+langdao-ce-gb.dictionary filter=lfs diff=lfs merge=lfs -text
