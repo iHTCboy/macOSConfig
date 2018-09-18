@@ -46,10 +46,10 @@
 			<key>Shell Script File</key>
 			<string>brackets-backquote.php</string>
 			<key>Title</key>
-			<string>Backquote</string>
+			<string>Backquote Brackets</string>
 			<key>Requirements</key>
 			<array>
-				<string>option-angle=1</string>
+				<string>option-backquote=1</string>
 			</array>
 		</dict>
 		<dict>
@@ -62,10 +62,10 @@
 			<key>Shell Script File</key>
 			<string>brackets-3backquote.php</string>
 			<key>Title</key>
-			<string>3 Backquote</string>
+			<string>Backquote3 Brackets</string>
 			<key>Requirements</key>
 			<array>
-				<string>option-angle=1</string>
+				<string>option-backquote3=1</string>
 			</array>
 		</dict>
 		<dict>
@@ -104,9 +104,9 @@
 	<key>Extension Description</key>
 	<string>Put brackets around the selected text, choosing from (), [], {} and &lt;&gt; ` `  ``` ```.</string>
 	<key>Extension Identifier</key>
-	<string>com.pilotmoon.popclip.extension.brackets</string>
+	<string>com.ihtcboy.popclip.extension.brackets</string>
 	<key>Extension Name</key>
-	<string>Brackets</string>
+	<string>MarkdownTools</string>
 	<key>Options</key>
 	<array>
 		<dict>
@@ -159,6 +159,6 @@
 		</dict>
 	</array>
 	<key>Required Software Version</key>
-	<integer>719</integer>
+	<integer>918</integer>
 </dict>
 </plist>
