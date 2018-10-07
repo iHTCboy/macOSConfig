@@ -1,2 +1,2 @@
 # SoftwareConfig
-My software config files.
+My Mac config/backup files for macOS.
