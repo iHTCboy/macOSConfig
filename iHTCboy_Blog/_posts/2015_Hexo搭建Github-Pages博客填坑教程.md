@@ -19,6 +19,8 @@ tags: [Hexo,Github Pages,搭建博客]  # <!--more-->
 - 11.总结
 - 12.参考引用
 - 13.搭建博客相关网站
+- 14.个人域名添加SSL
+- 15.文章更新
 
 ### 简述
 本文主要讲解Hexo安装时遇到的坑，Hexo安装之后的使用教程，Hexo安装需要的环境和教程，请自行百度、谷歌。
@@ -393,6 +395,19 @@ npm install hexo-server --save
 其它版本：[为自定义域名的GitHub Pages添加SSL 完整方案](https://segmentfault.com/a/1190000007740693)
 
 
+### 15.文件更新
+
+- 2018.02.25
+增加 Gitment 接入说明 [Gitment评论功能接入踩坑教程 | iHTCboy's blog](https://ihtcboy.com/2018/02/25/2018-02-25_Gitment评论功能接入踩坑教程/)
+
+- 2018.10.07
+不蒜子 统计
+因七牛强制过期『dn-lbstatics.qbox.me』域名，与客服沟通无果，只能更换域名到『busuanzi.ibruce.info』！
+只需把原有的：
+`<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>`
+域名改一下即可：
+<`script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>`
+只需要修改该js域名，其他均未改变。
 
 <br>
 > 注：本文首发于 [iHTCboy's blog](http://iHTCboy.com)，如若转载，请注来源
