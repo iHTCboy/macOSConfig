@@ -1,0 +1,11 @@
+#!/bin/bash
+
+blog_dir="/Users/HTC/Documents/Personal/iHTCBlog/source/"
+backup_dir="/Users/HTC/Documents/Personal/macOSConfig/iHTCboy_Blog/"
+
+# copy files
+cp -r "${blog_dir}" "${backup_dir}"
+
+# delete drafts file
+rm -rf "${backup_dir}/_drafts"
+
