@@ -10,9 +10,7 @@ tags: [App审核,屌,AppStore]  # <!--more-->
 
 <!--more-->
 
-![苹果反馈消息](http://7xliwf.com1.z0.glb.clouddn.com/ihtc.cc屏幕快照%202015-09-28%2009.09.55.png)
-
-![应用里有“屌”字](http://7xliwf.com1.z0.glb.clouddn.com/ihtc.cctemp..ujjsutgn.png)
+![应用里有“屌”字.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2015/10/应用里有“屌”字.png)
 
 ### 讨论
 应用里有两个地方用到“屌”字
@@ -23,18 +21,16 @@ tags: [App审核,屌,AppStore]  # <!--more-->
 上面文字，在中国使用应该是正常吧？
 如果按苹果这个逻辑，是不是AppStore里不能有“屌”字？
 
-![搜索时出现“屌”](http://7xliwf.com1.z0.glb.clouddn.com/ihtc.ccIMG_3016.PNG)
+![搜索时出现“屌”.PNG](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2015/10/搜索时出现“屌”.PNG)
 
-![连截图都有“屌”字](http://7xliwf.com1.z0.glb.clouddn.com/ihtc.ccIMG_3017.PNG)
+![连截图都有“屌”字.PNG](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2015/10/连截图都有“屌”字.PNG)
 
 那么问题来了，你一定猜到：这个应用评级一定不是4+！
 
-![果然是12+](http://7xliwf.com1.z0.glb.clouddn.com/ihtc.ccIMG_3019.PNG)
-
+![果然是12+.PNG](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2015/10/果然是12+.PNG)
 
 是的，你一定也猜到，我找到4+的，并且用“屌”为应用名了：
-![4+](http://7xliwf.com1.z0.glb.clouddn.com/ihtc.ccIMG_3018.PNG)
-
+![4+.PNG](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2015/10/4+.PNG)
 
 ### 结论
 最后，为了尽快上线，我们应用还是删除了相关图片，但是希望，苹果测试能不能“专业”一点，中国国情是什么你懂吗？难道他们就是有一个“敏感词”表，发现这个字，就直接拒绝？？?

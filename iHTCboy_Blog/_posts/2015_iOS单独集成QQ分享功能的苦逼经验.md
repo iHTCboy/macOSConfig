@@ -50,7 +50,7 @@ ps: 我在搜索资料时，看到有人说TencentOpenAPI.framework要放在工�
 
 2、URL type 里的 URL schemes  = tencent + appid。（因为微信、微博的两个值是相同的，所以要注意一下。）
 
-![appid是1104292447](http://7xliwf.com1.z0.glb.clouddn.com/ihtc.cc.appid是1104292447.png)
+![appid是1104292447.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2015/02/appid是1104292447.png)
 
 3、这里delegate为空，因为没有授权，所以不用代理。
 
@@ -78,7 +78,8 @@ ps: 我在搜索资料时，看到有人说TencentOpenAPI.framework要放在工�
 
 如果是Xcode 6.0创建工程时，默认可能没有单独设置Bundle display name属性值。但是因为SDK需要用到Bundle display name的值，所以务必请检查确保这个属性存在，如果没有请添加上。如下图所示：
 
-![Bundle display name 为桂林理工大学](http://7xliwf.com1.z0.glb.clouddn.com/ihtc.cc.Bundle%20display%20name%20为桂林理工大学.png)
+![Bundle display name 为桂林理工大学.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2015/02/Bundle_display_name为桂林理工大学.png)
+
 （ps：注意的是，这个名字会用在2个地方：1、应用显示的名字，2、分享到QQ界面时显示的“来自”小尾巴（到空间时，小尾巴是你注册腾讯appid时写的应用名字）
 
 ### （7）在实现分享的ViewCotroller里加入头文件

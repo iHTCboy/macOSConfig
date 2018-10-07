@@ -24,7 +24,7 @@ swift 3.0:
 
 **音频文件没有包含到项目资源中**，手工添加就可以了！
 
-![音频文件没有包含到项目资源中](http://upload-images.jianshu.io/upload_images/99517-eb7306ade72d3b02.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![音频文件没有包含到项目资源中.jpeg](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2016/11/音频文件没有包含到项目资源中.jpeg)
 
 
 ### 总结

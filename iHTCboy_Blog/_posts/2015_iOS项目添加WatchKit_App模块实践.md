@@ -15,33 +15,34 @@ tags: [iOS,WatchKit,Watch App]  # <!--more-->
 ### 一、增加watchOS
 这个步骤就看图带过吧，对于还不知道的新手来说，看图最直接：
 - 1.新建Target
-![New Target](http://7xliwf.com1.z0.glb.clouddn.com/ihtc.cc.step1.png)
+![step1_New_Target.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2015/11/step1_New_Target.png)
 
 - 2.选择 watchOS
-![Watchk it App](http://7xliwf.com1.z0.glb.clouddn.com/ihtc.cc.step2.png)
+![step2_Watchk_it_App.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2015/11/step2_Watchk_it_App.png)
 
 - 3.这步骤注意，默认勾选了Notification Scene，要解释一下：
--  <1> `` Glance Scene`` ：** 如果勾选，就会在Interface.storyboard里默认生成GlanceController的界面，如果原来选中了，后来想不要，就直接在Interface.storyboard里把GlanceController界面删除就可以了。**
+-  <1> `` Glance Scene`` ：**如果勾选，就会在Interface.storyboard里默认生成GlanceController的界面，如果原来选中了，后来想不要，就直接在Interface.storyboard里把GlanceController界面删除就可以了。**
 - <2> `` Complication`` : **这个就是在系统表盘显示时，滚动 Digital Crown 时，进行一些操作，现在OS2里增加的时间旅行，就是滚动 Digital Crown时，天气和日程表计划跟着变动，这个功能还是有点用的。**
-![配置](http://7xliwf.com1.z0.glb.clouddn.com/ihtc.cc.step3.png)
+
+![step3_配置.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2015/11/step3_配置.png)
 
 - 4.点击激活吧
-![Activate](http://7xliwf.com1.z0.glb.clouddn.com/ihtc.cc.step4.png)
+![step4_Activate.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2015/11/step4_Activate.png)
 
 - 5.最后在原来项目里增加了这两个目录App和Extension。
-![Watch目录](http://7xliwf.com1.z0.glb.clouddn.com/ihtc.cc.step5.png)
+![step5_Watch目录.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2015/11/step5_Watch目录.png)
 
 
 ### 二、一些坑要填
 1.默认新建的Target版本都是1.0，所以你要改成跟你现在项目的版本一样才行，不然就会报错。App和Extension的Target版本都要改。
-![Info.plist报错](http://7xliwf.com1.z0.glb.clouddn.com/ihtc.cc.Info.plist.png)
+![step6_Info.plist报错.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2015/11/step6_Info.plist报错.png)
 
-![更改为项目对应的版本号](http://7xliwf.com1.z0.glb.clouddn.com/ihtc.cc.屏幕快照%202015-10-20%2011.14.27.png)
+![step7_更改为项目对应的版本号.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2015/11/step7_更改为项目对应的版本号.png)
 
 2.默认App和Extension的Valid Architectures都是“armv7 armv7s i386 arm64”WatchOS运行的框架要改为``armv7k``。如果要在模拟器运行，增加i386。
-![No architectures to compile for armv7k](http://7xliwf.com1.z0.glb.clouddn.com/ihtc.cc.No%20architectures%20to%20compile%20for%20armv7k.png)
+![step8_No_architectures_to_compile_for_armv7k.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2015/11/step8_No_architectures_to_compile_for_armv7k.png)
 
-![App和Extension都要改成armv7k](http://7xliwf.com1.z0.glb.clouddn.com/ihtc.cc.armv7k.png)
+![step9_App和Extension都要改成armv7k.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2015/11/step9_App和Extension都要改成armv7k.png)
 
 还有一些其实的小问题，不太记得了，相信大家如果遇到自行搜索就能解决。
 
@@ -92,16 +93,16 @@ WatchKit用的图片库：Github上的[WKImageCache](https://github.com/mkoehnke
 前面提到勾选 `include Glance Scene ` 和 `include Complication` ，结果在实现时，没有搞好，直接在Glance Scene里显示一个下载链接的二维码，苹果审核员问我二维码是干什么用的？它会变吗？
 - Glance Scene最好要用一些有意义的数据显示
 
-![二维码被拒绝](http://7xliwf.com1.z0.glb.clouddn.com/ihtc.cc.Complication.png)
+![step10_二维码被拒绝.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2015/11/step10_二维码被拒绝.png)
 
 - Complication这个，我是勾选了，第二次又被拒绝，我想说，苹果审核能一次审核全部功能吗？？？？
 
-![开启了Complication，但没有实现功能被拒绝](http://7xliwf.com1.z0.glb.clouddn.com/ihtc.cc.timely%20mannner.png)
+![step11_开启了Complication，但没有实现功能被拒绝.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2015/11/step11_开启了Complication，但没有实现功能被拒绝.png)
 
 
 - 取消Complication功能，就是把下图的Data Source Class删除，在把五个勾去掉就可以了：
 
-![Complications Configuration](http://7xliwf.com1.z0.glb.clouddn.com/ihtc.cc.Complications.png)
+![step12_Complications_Configuration.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2015/11/step12_Complications_Configuration.png)
 
 终于改了，希望审核明天通过吧！！
 
@@ -113,7 +114,7 @@ WatchKit用的图片库：Github上的[WKImageCache](https://github.com/mkoehnke
 
 
 最后想吐槽一下苹果Watch，不知道是不是只有我遇到这个问题，表盘下面掉漆，这是苹果的技术吗？？？
-![苹果的logo首先掉色的，心都碎了](http://7xliwf.com1.z0.glb.clouddn.com/ihtc.cc.myWatch.jpg)
+![step13_苹果的logo首先掉色的，心都碎了.jpg](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2015/11/step13_苹果的logo首先掉色的，心都碎了.jpg)
 
 
 ### 参考

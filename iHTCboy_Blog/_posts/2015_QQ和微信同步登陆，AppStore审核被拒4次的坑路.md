@@ -25,11 +25,9 @@ tags: [QQ,同步登陆,微信]  # <!--more-->
 
 ```
 
-![第一次被拒绝](http://7xliwf.com1.z0.glb.clouddn.com/ihtc.cc解决方案中心2015-09-13%2017.13.58.png)
+![第一次被拒绝-有安装的情况，苹果是用iPad测试的.jpg](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2015/10/第一次被拒绝-有安装的情况，苹果是用iPad测试的.jpg)
 
-![有安装的情况，苹果是用iPad测试的](http://7xliwf.com1.z0.glb.clouddn.com/ihtc.cctemp..qunlrjcx.jpg)
-
-![都没有安装的情况](http://7xliwf.com1.z0.glb.clouddn.com/ihtc.cctemp..sgpecehb.png)
+![第一次被拒绝-都没有安装的情况.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2015/10/第一次被拒绝-都没有安装的情况.png)
 
 ##### 问题总结
 - 苹果不止用一台设备测试，或者不止一个人测试同一应用
@@ -40,11 +38,9 @@ tags: [QQ,同步登陆,微信]  # <!--more-->
 ### 第二次被拒绝
 苹果不允许我隐藏图标，那么我就显示出来吧！同时也会判断安装，如果没有安装就提示用户没有安装！这样也不给！！
 
-![第二次被拒绝](http://7xliwf.com1.z0.glb.clouddn.com/ihtc.cc屏幕快照%202015-09-17%2009.15.38.png)
+![第二次被拒绝-微信提示没有安装.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2015/10/第二次被拒绝-微信提示没有安装.png)
 
-![微信提示没有安装](http://7xliwf.com1.z0.glb.clouddn.com/ihtc.cctemp..pjxfsxjt.png)
-![QQ提示没有安装](http://7xliwf.com1.z0.glb.clouddn.com/ihtc.cctemp..xqgngvsq.png)
-
+![第二次被拒绝-QQ提示没有安装.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2015/10/第二次被拒绝-QQ提示没有安装.png)
 
 ### 第三次被拒绝
 这次没有办法了，网上的方法说，如果没有key安装QQ的能用web网页登陆～
@@ -56,7 +52,7 @@ tags: [QQ,同步登陆,微信]  # <!--more-->
 加上这个key就一切正常了，再删掉这个key调用QQ登录绝逼不行！！
 这tmd腾讯也太操蛋了吧！！！！
 
-![QQ 不是最新版](http://7xliwf.com1.z0.glb.clouddn.com/ihtc.qq.jpg.png)
+![第三次被拒绝-QQ不是最新版.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2015/10/第三次被拒绝-QQ不是最新版.png)
 
 ### 第四次被拒绝
 最后一次，苹果也有点不耐烦了！！！
@@ -65,10 +61,7 @@ tags: [QQ,同步登陆,微信]  # <!--more-->
 最后，在[cocoachina 论坛](http://www.cocoachina.com/bbs/read.php?tid-269355-page-2.html)找到答案：
 > 只要让腾讯客服对appid开通个权限就可以。
 
-
-![早上9点可以联系人工客服说就行了](http://7xliwf.com1.z0.glb.clouddn.com/ihtc.ccqqweb.png)
-
-![苹果详细说明原因](http://7xliwf.com1.z0.glb.clouddn.com/ihtc.cc屏幕快照%202015-09-19%2008.44.23.png)
+![第四次被拒绝-早上9点可以联系人工客服说就行了.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2015/10/第四次被拒绝-早上9点可以联系人工客服说就行了.png)
 
 
 ### 总结
@@ -78,7 +71,7 @@ tags: [QQ,同步登陆,微信]  # <!--more-->
 ### 微信同步登陆
 如果没有安装微信，微信同步登陆只能通过手机号码，不知道苹果测试员怎么测试呢？！
 
-![没有安装微信时](http://7xliwf.com1.z0.glb.clouddn.com/ihtc.ccIMG_2983.PNG)
+![没有安装微信时.PNG](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2015/10/没有安装微信时.PNG)
 
 ### 参考文章
 - [关于IOS项目QQ空间授权提示安装最新版本的QQ的解决方法](http://bbs.mob.com/forum.php?mod=viewthread&tid=177)

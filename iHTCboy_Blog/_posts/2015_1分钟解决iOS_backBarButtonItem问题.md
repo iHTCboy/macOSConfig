@@ -10,7 +10,7 @@ reward: true
 
 正好在做毕业设计时，想到要设置全局的返回样式，只要图片，不要文字，形式如下：
 
-![最终效果图](http://upload-images.jianshu.io/upload_images/99517-72a0e769c8b09c16.png)
+![最终效果图.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2015/04/最终效果图.png)
 
 <!--more-->
 
@@ -43,7 +43,7 @@ navigationBar.backIndicatorTransitionMaskImage = image;
 
 - 以上代码实现了全局的形式如下：
 
-![带有上一级导航标题](http://upload-images.jianshu.io/upload_images/99517-38db7c658561331b.png)
+![带有上一级导航标题.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2015/04/带有上一级导航标题.png)
 
 
 
@@ -67,7 +67,7 @@ offset.horizontal = -500;
 
 ## 3、最后效果如下：
 
-![最后效果图](http://upload-images.jianshu.io/upload_images/99517-ac06349a58357a38.png)
+![最后效果图.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2015/04/最后效果图.png)
 
 ## 4、快速使用方法
 
