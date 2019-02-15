@@ -3,6 +3,7 @@
 {
   "Working Directory" : "\/Users\/HTC",
   "Prompt Before Closing 2" : 0,
+  "Dynamic Profile Filename" : "\/Users\/efun\/Library\/Application Support\/iTerm2\/DynamicProfiles\/iHTCboyProfiles",
   "Selected Text Color" : {
     "Green Component" : 0,
     "Blue Component" : 0,
@@ -42,6 +43,7 @@
   "Non-ASCII Anti Aliased" : true,
   "Sync Title" : false,
   "Disable Window Resizing" : true,
+  "Description" : "Default",
   "Close Sessions On End" : true,
   "Jobs to Ignore" : [
     "rlogin",
@@ -67,6 +69,7 @@
     "Blue Component" : 0,
     "Red Component" : 0.73333334922790527
   },
+  "Use Non-ASCII Font" : false,
   "Link Color" : {
     "Red Component" : 0,
     "Color Space" : "sRGB",
@@ -81,7 +84,7 @@
     "Blue Component" : 1,
     "Red Component" : 1
   },
-  "Unlimited Scrollback" : false,
+  "Unlimited Scrollback" : true,
   "Custom Command" : "No",
   "Smart Selection Rules" : [
     {
@@ -318,7 +321,7 @@
   "Send Code When Idle" : false,
   "ASCII Anti Aliased" : true,
   "Tags" : [
-
+    "Dynamic"
   ],
   "Ansi 9 Color" : {
     "Green Component" : 0.3333333432674408,
@@ -355,17 +358,17 @@
     "Blue Component" : 0,
     "Red Component" : 0.73333334922790527
   },
-  "Idle Code" : 0,
-  "Ansi 10 Color" : {
-    "Green Component" : 1,
-    "Blue Component" : 0.3333333432674408,
-    "Red Component" : 0.3333333432674408
-  },
   "Ansi 8 Color" : {
     "Green Component" : 0.3333333432674408,
     "Blue Component" : 0.3333333432674408,
     "Red Component" : 0.3333333432674408
   },
+  "Ansi 10 Color" : {
+    "Green Component" : 1,
+    "Blue Component" : 0.3333333432674408,
+    "Red Component" : 0.3333333432674408
+  },
+  "Idle Code" : 0,
   "Badge Color" : {
     "Red Component" : 1,
     "Color Space" : "sRGB",
@@ -377,8 +380,8 @@
   "Smart Cursor Color" : true,
   "Semantic History" : {
     "editor" : "com.sublimetext.3",
-    "text" : "",
-    "action" : "best editor"
+    "action" : "best editor",
+    "text" : ""
   },
   "Ambiguous Double Width" : false,
   "Blur Radius" : 13.965626982868018,
@@ -432,7 +435,7 @@
   },
   "Columns" : 80,
   "Visual Bell" : true,
-  "Custom Directory" : "No",
+  "Custom Directory" : "Recycle",
   "Ansi 5 Color" : {
     "Green Component" : 0,
     "Blue Component" : 0.73333334922790527,
@@ -443,6 +446,7 @@
 {
   "Working Directory" : "\/Users\/HTC",
   "Prompt Before Closing 2" : 0,
+  "Dynamic Profile Filename" : "\/Users\/efun\/Library\/Application Support\/iTerm2\/DynamicProfiles\/iHTCboyProfiles",
   "Selected Text Color" : {
     "Green Component" : 0,
     "Blue Component" : 0,
@@ -484,6 +488,7 @@
   "Non-ASCII Anti Aliased" : true,
   "Sync Title" : false,
   "Disable Window Resizing" : true,
+  "Description" : "Default",
   "Close Sessions On End" : true,
   "Jobs to Ignore" : [
     "rlogin",
@@ -511,6 +516,7 @@
     "Blue Component" : 0,
     "Red Component" : 0.73333334922790527
   },
+  "Use Non-ASCII Font" : false,
   "Link Color" : {
     "Red Component" : 0,
     "Color Space" : "sRGB",
@@ -525,7 +531,7 @@
     "Blue Component" : 1,
     "Red Component" : 1
   },
-  "Unlimited Scrollback" : false,
+  "Unlimited Scrollback" : true,
   "Custom Command" : "No",
   "HotKey Key Code" : 42,
   "Keyboard Map" : {
@@ -763,7 +769,7 @@
   "Send Code When Idle" : false,
   "ASCII Anti Aliased" : true,
   "Tags" : [
-
+    "Dynamic"
   ],
   "Ansi 9 Color" : {
     "Green Component" : 0.3333333432674408,
@@ -788,21 +794,21 @@
     "Red Component" : 1
   },
   "HotKey Window Dock Click Action" : 0,
-  "Default Bookmark" : "No",
-  "Cursor Color" : {
-    "Green Component" : 0.73333334922790527,
-    "Blue Component" : 0.73333334922790527,
-    "Red Component" : 0.73333334922790527
-  },
-  "Disable Smcup Rmcup" : false,
-  "Name" : "HotKey Window",
-  "Blinking Cursor" : false,
-  "Guid" : "E42AF17D-81CA-4803-BF9E-CB4471428074",
   "Ansi 1 Color" : {
     "Green Component" : 0,
     "Blue Component" : 0,
     "Red Component" : 0.73333334922790527
   },
+  "Default Bookmark" : "No",
+  "Disable Smcup Rmcup" : false,
+  "Name" : "HotKey Window",
+  "Blinking Cursor" : false,
+  "Cursor Color" : {
+    "Green Component" : 0.73333334922790527,
+    "Blue Component" : 0.73333334922790527,
+    "Red Component" : 0.73333334922790527
+  },
+  "Guid" : "E42AF17D-81CA-4803-BF9E-CB4471428074",
   "Ansi 8 Color" : {
     "Green Component" : 0.3333333432674408,
     "Blue Component" : 0.3333333432674408,
@@ -825,8 +831,8 @@
   "Smart Cursor Color" : true,
   "Semantic History" : {
     "editor" : "com.sublimetext.3",
-    "text" : "",
-    "action" : "best editor"
+    "action" : "best editor",
+    "text" : ""
   },
   "Ambiguous Double Width" : false,
   "Blur Radius" : 6.0042948921319796,
@@ -892,7 +898,7 @@
 
   ],
   "Visual Bell" : true,
-  "Custom Directory" : "No",
+  "Custom Directory" : "Recycle",
   "Ansi 5 Color" : {
     "Green Component" : 0,
     "Blue Component" : 0.73333334922790527,
@@ -902,4 +908,3 @@
 }
 ]
 }
-
