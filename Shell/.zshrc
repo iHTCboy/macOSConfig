@@ -63,7 +63,7 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
+  git zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -107,8 +107,8 @@ alias cls='clear'
 alias mkipa='sh /Users/HTC/Documents/Efun/ipa.sh'
 alias zshconfig='vim ~/.zshrc'
 alias epodpush='sh /Users/HTC/Documents/Programing/Efun/EfuniOS/PrivateCocoaPodConfigurator/release.sh'
-alias htcbg='cd /Users/HTC/Documents/Personal/iHTCBlog'
-alias imgbg='cd /Users/HTC/Documents/Personal/iGallery/'
+alias htcbg='cd /Users/HTC/Documents/Personal/P-Project/iHTCBlog/'
+alias imgbg='cd /Users/HTC/Documents/Personal/P-Project/iGallery/'
 
 
 # Android dev
