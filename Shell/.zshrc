@@ -131,9 +131,8 @@ function glazy() {
 alias gs="git status"
 alias gc="git commit -m "
 alias gaa="git add ."
-alias gp="git push"
-alias gpl="git pull"
-
+alias gp="git pull"
+alias gps="git push"
 alias gl="git log --graph --all --format=format:'%C(bold blue)%h %C(bold green)(%cr) %C(bold white)%cn: %C(bold yellow)%d%C(reset) %C(white)%s%C(reset)' --abbrev-commit --date=relative && echo '\033[2A'"
 alias gll="git log --graph --all --format=format:'%C(bold blue)%h %C(bold green)(%cr) %C(bold cyan)%cD %C(bold yellow)%d%n''        %C(bold white)%cn:%C(reset) %C(white)%s%C(reset)' --abbrev-commit && echo '\033[2A'"
 
