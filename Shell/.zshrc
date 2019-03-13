@@ -141,3 +141,5 @@ alias gll="git log --graph --all --format=format:'%C(bold blue)%h %C(bold green)
 export MonkeyDevPath=/opt/MonkeyDev
 export MonkeyDevDeviceIP=
 export PATH=/opt/MonkeyDev/bin:$PATH
+# JAVA
+export JAVA_HOME=$(/usr/libexec/java_home)
