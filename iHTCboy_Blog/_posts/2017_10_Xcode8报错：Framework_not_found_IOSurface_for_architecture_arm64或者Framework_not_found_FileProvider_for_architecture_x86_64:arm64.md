@@ -20,16 +20,17 @@ IOSurface.framework和 FileProvider.framework是 iOS11 新增加的库，但  Xc
 
 ### 结果
 
-如果原厂升级到 Xcode9，则不受影响。如果 Xcode8 编译报错，网上最初给出的方案，在 Xcode8 中添加IOSurface.framework和 FileProvider.framework后打包，结果最后坑定了！
+如果升级到 Xcode9，则不受影响。如果 Xcode8 编译报错，网上最初给出的方案，在 Xcode8 中添加IOSurface.framework和 FileProvider.framework后打包，结果最后坑定了！
 
 在 Xcode8 中添加IOSurface.framework和 FileProvider.framework后打包，上传iTunes Connet 报错：
-![iTunes Connet 报错使用非法 API.jpg](http://upload-images.jianshu.io/upload_images/99517-d26868c558da3c89.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/512)
+
+![iTunes Connet 报错使用非法 API.jpg](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2017/10/iTunes-Connet-Error.jpg)
 
 ### 正解解决方案
 
  Build Settings 中 Link Frameworks Automatically 把默认Yes 改成 No ，在 Xcode8 编译就能通过。
 
-![设置 Link Frameworks Automatically 为 NO.jpeg](http://upload-images.jianshu.io/upload_images/99517-5a686cb71bee2de9.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![设置 Link Frameworks Automatically 为 NO.jpeg](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2017/10/Xcode-Settings.jpeg)
 
 
 ### 参考&扩展阅读

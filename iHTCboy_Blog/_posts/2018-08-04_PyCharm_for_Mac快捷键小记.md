@@ -13,13 +13,19 @@ reward: true
 <!--more-->
 
 ### 2、PyCharm for Mac 快捷键
+#### 思维导图
+
+![20180804-PyCharm-Shortcut-20190330.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2018/08/20180804-PyCharm-Shortcut-20190330.png)
+
+
+#### 快捷键
 
 | 快捷键 | 说明 | 
 | --- | --- |
 | cmd + b | 跳转到声明处（cmd加鼠标） |
 | cmd + d | 在下一行复制本行的内容| 
-| cmd [] | 光标之前/后的位置 | 
-| cmd + opt + [] | 函数和方法前后的位置 | 
+| cmd [ / ] | 跳转的页面回退或前进 | 
+| cmd + opt + [ / ] | 函数和方法前后的位置 | 
 | cmd + backspace | 删除当前行 | 
 | cmd + c | 复制光标当前行,剪切同理 | 
 | cmd + f | 当前文件搜索（回车下一个 shift回车上一个）| 
@@ -39,7 +45,7 @@ reward: true
 | cmd shift - | 折叠所有 | 
 | cmd / | 注释/取消注释一行 | 
 | cmd + opt + / | 批量注释(pycharm不生效)| 
-| ctr + tab | 史上最NB的导航窗口（工程文件列表、文件结构列表、命令行模式、代码检查、VCS等，下面两个是可以被替换的）| 
+| ctr + tab | 史上最NB的导航窗口（工程文件列表、文件结构列表、命令行模式、代码检查、VCS等）| 
 | alt + F12 | 打开命令行栏| 
 | cmd + F12 | 显示文件结构| 
 | cmd + j | 代码智能补全| 
