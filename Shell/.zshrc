@@ -103,6 +103,7 @@ PATH=$PATH:/usr/local/mysql/bin
 alias lpi="lipo -i"
 alias hdg="hexo clean; hexo deploy -g"
 alias macss="sudo spctl --master-disable"
+alias macssab="sudo spctl --master-enable"
 alias cls='clear'
 alias mkipa='sh /Users/HTC/Documents/Efun/ipa.sh'
 alias zshconfig='vim ~/.zshrc'
