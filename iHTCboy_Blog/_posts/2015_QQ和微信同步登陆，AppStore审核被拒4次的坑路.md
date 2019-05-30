@@ -2,6 +2,7 @@ title: QQ和微信同步登陆，AppStore审核被拒4次的坑路
 date: 2015-10-16 23:58:26
 categories: technology #life poetry
 tags: [QQ,同步登陆,微信]  # <!--more-->
+reward: true
 ---
 
 最近应用加入了微信和QQ同步登陆，结果被拒绝了4次！！下面就让我带大家回顾这坑路～

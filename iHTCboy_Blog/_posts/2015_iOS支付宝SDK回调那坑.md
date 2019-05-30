@@ -2,6 +2,7 @@ title: iOS支付宝SDK回调那坑
 date: 2015-05-26 00:46:26
 categories: technology #life poetry
 tags: [iOS,支付宝,alipay ]  # <!--more-->
+reward: true
 ---
 
 支付宝钱包支付接口开发包2.0标准版(iOS 2.2.1) ，回调不出来，demo给出的方法是：

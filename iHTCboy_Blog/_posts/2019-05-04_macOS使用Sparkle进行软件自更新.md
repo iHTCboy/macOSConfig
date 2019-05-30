@@ -8,7 +8,7 @@ reward: true
 
 ### 1、前言
 
-其实，本篇文章应该是上一年就打算写的，结果呢，最近才有时间整理。开发 macOS 软件也有一段时间，对于软件更新，之前是自己手动编写增加 API 接口来提示是否有新版本，但一直觉得不智能，界面也不友好，而且下载的是压缩包，需要解压后自动手动替换 App，甚是痛苦。所以，看了很多开源项目，看到了一个 macOS 专用的更新库 `Sparkle`, 然而现有网上的教程，已经非常陈旧，花了点时间才悟，所以，写一个总结吧。另外，也有其它的更新库，大家需要可以自行了解，以主流库为主，维护更好，这也是项目选型考虑的条件之一，也许是强者更强，劣币驱逐良币现象在开源界好像没有发生过~
+其实，本篇文章应该是上一年就打算写的，结果呢，最近才有时间整理。开发 macOS 软件也有一段时间，对于软件更新，之前是自己手动编写增加 API 接口来提示是否有新版本，但一直觉得不智能，界面也不友好，而且下载的是压缩包，需要解压后自动手动替换 App，甚是痛苦。所以，看了很多开源项目，看到了一个 macOS 专用的更新库 `Sparkle`, 然而现有网上的教程，已经非常陈旧，花了点时间才悟，所以，写一个总结吧。另外，也有其它的更新库，大家需要可以自行了解，以主流库为主，维护更好，这也是项目选型考虑的条件之一，也许是强者更强，好像`劣币驱逐良币现象`在开源界没有发生过吧~
 
 <!--more-->
 
@@ -202,7 +202,7 @@ appcast.xml 内容：
 
 ### 一些问题&坑点
 
-- web服务器
+#### web服务器
 上面说明的 `http://xxx.comappcast.xml ` 更新信息文件，还是 ` http://xxx.com/release-note.html` 更新说明页面，还是应用的zip文件下载链接，都是需要通过服务器进行访问。
 
 这里比较简单的方法，就是上传到 `GitHub` 上，就以访问到文件或链接。
@@ -225,7 +225,7 @@ Serving HTTP on 0.0.0.0 port 8000 ...
 然后就可以通过 `http://0.0.0.0:8000` 就能访问电脑的所有文档和文件目录。
 
 
-- HTTPS
+#### HTTPS
 
 macOS 10.11 起苹果默认开启 App Transport Security ，也就是应用只能访问 HTTPS 的链接，HTTP 的默认不能访问。
 
@@ -240,29 +240,29 @@ macOS 10.11 起苹果默认开启 App Transport Security ，也就是应用只�
 ```
 
 
-- 版本号
+#### 版本号
 注意，版本号是 `shortVersionString`；不是 `version` 字段。但是这2个字段都配置了的话，2个都需要大于旧应用的对应版本号，否则，`Sparkle` 认为没有新版本。
 
-- AppStore版本
+#### AppStore版本
 如果是上架 AppStore，则不能使用 `Sparkle` ，因为苹果审核禁止检查更新和自动更新，需要更新，要求用户使用 AppStore。
 
-- 编译报错
+#### 编译报错
 
 ```
 /Users/HTC/Desktop/SparkleDemo-macOS/Pods/Target Support Files/Pods-macOSDemo/Pods-macOSDemo-frameworks.sh: line 104: EXPANDED_CODE_SIGN_IDENTITY: unbound variable
 Command PhaseScriptExecution failed with a nonzero exit code
 ```
 
-在Xcode菜单栏选择 File -> Workspace Setting 就会弹出一个界面，看出 Xcode10 是默认选中的最新的 `New Build System(Default)`，在这个编译系统的环境下，编译脚本一直会报错。把 build system 切换到 `Legacy Build System`，使用旧的编译系统就正常运行。怀疑是新的编译系统，流程有变动，如果有问题，后续在深研。
+在Xcode菜单栏选择 `File` -> `Workspace Setting` 就会弹出一个界面，看出 Xcode10 是默认选中的最新的 `New Build System(Default)`，在这个编译系统的环境下，编译脚本一直会报错。把 build system 切换到 `Legacy Build System`，使用旧的编译系统就正常运行。怀疑是新的编译系统，流程有变动，这个问题，后续在深研吧。
 
 
 ### 总结
 
-其实，官方文档已经给出了很好的教程。这里写的原因:
+其实，官方文档已经给出了很好的教程。这里为什么还写教程的原因:
 
 其一是，官方的文档比较旧，针对 Xcode10，一些操作已经发生了比较大的变化，对于新入门的苹果开发者，可以比较懵。
 
-其二，对于英文或者想最快的方式入门使用的同学，提供一个最简洁的教程，节省大家的时间，对大家都好的事件，应该做！
+其二，对于英文或者想快速的入门使用的同学，提供一个最简洁的教程，节省大家的时间，对大家都好的事件，应该做！
 
 其三，对于刚刚入门 macOS 软件开发的同学，可能还不知道有这样优秀的第三方更新软件库，所以，心若所诚，力行心从！
 

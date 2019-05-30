@@ -2,6 +2,7 @@ title: 基于NSTimer的倒计时
 date: 2015-04-17 15:12:26
 categories: technology #life poetry
 tags: [iOS,NSTimer,倒计时]  # <!--more-->
+reward: true
 ---
 
 今天做手机短信验证码的功能，不用GCD，简单的NSTimer就可以完成,不知道有没有bug,测试中。。。

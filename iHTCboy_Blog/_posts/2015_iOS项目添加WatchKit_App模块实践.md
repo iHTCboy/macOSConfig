@@ -2,6 +2,7 @@ title: iOS项目添加WatchKit App模块实践
 date: 2015-11-03 01:05:26
 categories: technology #life poetry
 tags: [iOS,WatchKit,Watch App]  # <!--more-->
+reward: true
 ---
 
 最近在公司原来一个项目里增加了Apple　Watch模块，遇到了很多坑。首先说明，本人目前对Swift还不深入熟悉，所以还是打算在原项目里用OC来实现。其次，我用了Apple Watch3个月了，还是第一次入门，看了喵神的教程，一步步来的。想想WatchOS 都2了，再不用用都老了。

@@ -2,8 +2,10 @@ title: Hello World
 date: 2015-09-01 18:18:18
 categories: life
 tags: [Hello World, blog]
+reward: true
 ---
-Welcome to 何天从的博客，今天正式开始新的生活！
+
+Welcome to iHTCboy的博客，今天正式开始新的生活！
 
 之前一直使用简书写文章，今天终于搭建好自己的博客。
 

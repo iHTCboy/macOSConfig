@@ -2,6 +2,7 @@ title: 支付宝手表？YunOSWatch
 date: 2015-09-02 20:33:26
 categories: technology #life poetry
 tags: [iWatch,YunOSWatch,支付宝手表]  # <!--more-->
+reward: true
 ---
 
 今天下载支付宝应用查看里面的数据时，发现了一个YunOSWatch.bundle

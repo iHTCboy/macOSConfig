@@ -2,6 +2,7 @@ title: iOS单独集成QQ分享功能的苦逼经验
 date: 2015-02-27 23:17:26
 categories: technology  #life poetry
 tags: [iOS,QQsdk,QQ分享]  # <!--more-->
+reward: true
 ---
 
 这个过程其实很简单，就是腾讯的文档真的不敢恭维！

@@ -2,6 +2,7 @@ title: 你可能永远不知道的iPhone功能！
 date: 2015-04-14 22:33:26
 categories: technology  #life poetry
 tags: [iPhone,iOS,AppStore,iTunes]  # <!--more-->
+reward: true
 ---
 
 ### 1、前言

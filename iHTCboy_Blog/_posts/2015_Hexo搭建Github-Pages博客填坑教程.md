@@ -2,6 +2,7 @@ title: Hexo搭建Github Pages博客填坑教程
 date: 2015-09-06 01:23:36
 categories: technology #life poetry
 tags: [Hexo,Github Pages,搭建博客]  # <!--more-->
+reward: true
 
 ---
 

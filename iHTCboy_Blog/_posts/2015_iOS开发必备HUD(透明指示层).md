@@ -2,6 +2,7 @@ title: iOS开发必备HUD(透明指示层)
 date: 2015-05-10 11:18:26
 categories: technology #life poetry
 tags: [iOS,HUD,透明指示层]  # <!--more-->
+reward: true
 ---
 
 ### 1.MBProgressHUD

@@ -2,6 +2,7 @@ title: 推荐GitHub很火的两个视图转换
 date: 2015-04-26 12:37:26
 categories: technology #life poetry
 tags: [iOS,GitHub,视图转换]  # <!--more-->
+reward: true
 ---
 
 ## [KNSemiModalViewController](https://github.com/kentnguyen/KNSemiModalViewController)

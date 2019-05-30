@@ -2,6 +2,7 @@ title: AppStore审核被拒，不能带“屌”
 date: 2015-10-18 23:48:24
 categories: technology #life poetry
 tags: [App审核,屌,AppStore]  # <!--more-->
+reward: true
 ---
 
 ### 问题
