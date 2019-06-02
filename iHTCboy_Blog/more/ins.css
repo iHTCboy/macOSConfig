@@ -146,24 +146,6 @@
 
 /* ====== more ===== */
 
-#jieshao li {
-    font-size: 15px;
-}
-
-#noliststyle li {
-    font-size: 13px;
-    list-style: none;
-}
-
-.track-list ul li {
-    list-style: none !important;
-}
-
-.track-list ul li:before {
-    list-style: none !important;
-    content: "";
-}
-
 .track-rcol {
     width: 100%;
     border: 1px solid #eee;
@@ -212,7 +194,7 @@
 }
 
 .track-list li .time {
-    margin-right: 20px;
+    margin-right: 15px;
     position: relative;
     top: 4px;
     display: inline-block;
@@ -322,7 +304,11 @@
     color: #2c3e50
 }
 
-.article-more ul li:before {
+#summary li {
+    font-size: 15px;
+}
+
+#summary li:before {
     content: "";
     width: 6px;
     height: 6px;
@@ -334,6 +320,23 @@
     float: left;
     margin-top: 10px
 }
+
+#noliststyle li {
+    font-size: 13px;
+    list-style: none !important;
+}
+
+#noliststyle ul li:before {
+    list-style: none !important;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border: 0px;
+    margin-right: 0px;
+    float: left; 
+    margin-top:00px;
+}
+
 
 
 /* ====== video ===== */

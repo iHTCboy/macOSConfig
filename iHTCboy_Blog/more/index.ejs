@@ -9,114 +9,128 @@ open_in_new: false
 ---
 <link rel="stylesheet" href="./ins.css">
 <div class="photos-btn-wrap">
-  <a class="photos-btn active" href="/more">iHTCboy</a>
-  <a class="photos-btn" href="/more/onemindmap.html">思维导图</a>
-  <a class="photos-btn" href="/more/photos.html">我的相册</a>
-  <a class="photos-btn" href="/more/videos.html">我的视频</a>
+    <a class="photos-btn active" href="/more">iHTCboy</a>
+    <a class="photos-btn" href="/more/onemindmap.html">思维导图</a>
+    <a class="photos-btn" href="/more/photos.html">我的相册</a>
+    <a class="photos-btn" href="/more/videos.html">我的视频</a>
 </div>
 
 <div class="article-more">
-      
-<h3>Summary</h3>
-<ul id="jieshao">
-  <li>爱过跑步，又未跑过马拉松；</li>
-  <li>爱过诗词，又未写过最佳作品；</li>
-  <li>爱过艺术，又未做出牛逼视频特效；</li>
-  <li>爱过技术，又未做出改变世界的代码；</li>
-  <li>不会唱歌、不会画画、不会跳舞......</li>
-</ul>
-<p>一个梦想进步的南方小哥，略微强迫症和完美困难症，缺乏天赋，对于新鲜事物非常乐于研究，努力变得更棒！</p>
-<p>喜好简单、清新、留白的简洁体验；曾经做过很多特别的事，写过诗、做过视频剪辑字幕君、吹过葫芦丝、学过爱尔兰哨笛，最后都没有坚持下来；然后发现，更喜欢写代码的感觉，享受动脑子的乐趣~</p>
 
-<h3>Blog</h3>
-<div class="track-rcol">
-  <div class="track-list" id="shijian">
-    <span id="timeDate">本站已运行 666 天 </span><span id="times">08 小时 08 分 08 秒</span>
-    <script>
-        var now = new Date(); 
-        function createtime() { 
-            var grt= new Date("09/01/2015 00:00:01");
-            now.setTime(now.getTime()+250); 
-            days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
-            hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
-            if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
-            mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
-            seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
-            snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
-            document.getElementById("timeDate").innerHTML = "本站已运行 "+dnum+" 天 "; 
-            document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
-        } 
-    setInterval("createtime()",250);
-    </script>
-    <ul id="noliststyle">
-      <li style="list-style-type:none !important;">
-        <i class="node-icon2"></i>
-        <span class="time">2018年10月7日</span>
-        <span class="txt">更换站点域名为：<a href="http://ihtcboy.com" target="_blank">https://ihtcboy.com</a></span>
-      </li>
-      <li style="list-style-type:none !important;">
-        <i class="node-icon"></i>
-        <span class="time">2015年09月1日</span>
-        <span class="txt">博客 <a href="http://ihtcboy.com" target="_blank">http://ihtc.cc</a> 正式使用。</span>
-      </li>
+    <h3>Summary</h3>
+    <ul id="summary">
+        <li>爱跑步，又未跑过马拉松；</li>
+        <li>爱诗词，又未写过得意作品；</li>
+        <li>爱艺术，又未做过颠覆创新的设计；</li>
+        <li>爱技术，又未敲过改变世界的代码；</li>
+        <li>不唱歌、不会画画、不会跳舞....</li>
     </ul>
-  </div>
-</div>
-<p>深知知识无价，乐与学习和分享！坚持就是力量，待它十年，且看今朝~</p>
-<p>近期学习：移动开发技术自动化/全栈化...</p>
+    <p>一个缺少天赋的南方小哥，自带强迫症&完美症，热爱新鲜事物，修身齐家走天下！</p>
 
-<h3 id="wdzph">Projects</h3>
-<div class="production-item">
-    <div class="production-picture">
-        <a target="_blank" href="https://itunes.apple.com/cn/app/iLeetCoder/id1458259471?l=zh&ls=1&mt=8" id="bj1"></a>
-    </div>
-    <div class="production-info">
-        <div class="production-title">
-            <a target="_blank" href="https://itunes.apple.com/cn/app/iLeetCoder/id1458259471?l=zh&ls=1&mt=8">iLeetCoder</a>
+    <h3>Blog</h3>
+    <div class="track-rcol">
+        <div class="track-list" id="noliststyle">
+            <span id="timeDate">本站已运行 666 天 </span><span id="times">08 小时 08 分 08 秒</span>
+            <script>
+                var now = new Date();
+                function createtime() {
+                    var grt = new Date("04/14/2015 00:00:01");
+                    now.setTime(now.getTime() + 250);
+                    days = (now - grt) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+                    hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+                    if (String(hnum).length == 1) { hnum = "0" + hnum; } minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+                    mnum = Math.floor(minutes); if (String(mnum).length == 1) { mnum = "0" + mnum; }
+                    seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+                    snum = Math.round(seconds); if (String(snum).length == 1) { snum = "0" + snum; }
+                    document.getElementById("timeDate").innerHTML = "本站已运行 " + dnum + " 天 ";
+                    document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+                }
+                setInterval("createtime()", 250);
+            </script>
+            <ul>
+                <li>
+                    <i class="node-icon"></i>
+                    <span class="time">2018年05月01日</span>
+                    <span class="txt">更换站点域名为：<a href="https://ihtcboy.com"
+                            target="_blank">https://iHTCboy.com</a>。</span>
+                </li>
+                <li>
+                    <i class="node-icon2"></i>
+                    <span class="time">2015年04月28日</span>
+                    <span class="txt">更换站点域名为：<a href="https://ihtcboy.com" target="_blank">http://iHTC.cc</a>。</span>
+                </li>
+                <li>
+                    <i class="node-icon2"></i>
+                    <span class="time">2015年04月14日</span>
+                    <span class="txt">本站创建，采用<a href="https://hexo.io/" target="_blank">Hexo</a>开源框架，在<a href="https://github.com/litten/hexo-theme-yilia" target="_blank">yilia</a>主题基础上进行修改。托管至Github：<a href="https://ihtcboy.com" target="_blank">iHTCboy.github.io</a>。</span>
+                </li>
+            </ul>
         </div>
-        <div class="production-comments">2019 for iOS</div>
-        <div class="production-comments">一款精心学习Leetcode算法题目的App。</div>
     </div>
-</div>
-<div class="production-item">
-    <div class="production-picture">
-        <a target="_blank" href="https://itunes.apple.com/cn/app/iWuBi/id1459028801?l=zh&ls=1&mt=8" class="bj2"></a>
-    </div>
-    <div class="production-info">
-        <div class="production-title">
-            <a target="_blank" href="https://itunes.apple.com/cn/app/iWuBi/id1459028801?l=zh&ls=1&mt=8">爱五笔</a>
+    <p>深知知识无价，乐分享和探索，相信坚持的力量！待它十年，且看今朝~</p>
+    <p>执着留白&精巧的简洁体验；曾作诗词、做视频字幕&剪辑、吹葫芦丝、学爱尔兰哨笛，但没有坚持下来；喜欢代码的感觉，享受思考的乐趣~</p>
+    <p>目前努力的方向：移动开发技术自动化/全栈化...</p>
+
+    <h3 id="wdzph">Projects</h3>
+    <div class="production-item">
+        <div class="production-picture">
+            <a target="_blank" href="https://itunes.apple.com/cn/app/iLeetCoder/id1458259471?l=zh&ls=1&mt=8"
+                id="bj1"></a>
         </div>
-        <div class="production-comments">2019 for iOS</div>
-        <div class="production-comments">五笔输入法学习App，编码和拆字，支持86版和98版/简体和繁体。</div>
-    </div>
-</div>
-<div class="production-item">
-    <div class="production-picture">
-        <a target="_blank" href="https://itunes.apple.com/cn/app/iTer/id1224934068?l=zh&ls=1&mt=8" class="bj3"></a>
-    </div>
-    <div class="production-info">
-        <div class="production-title">
-            <a target="_blank" href="https://itunes.apple.com/cn/app/iTer/id1224934068?l=zh&ls=1&mt=8">iTer</a>
+        <div class="production-info">
+            <div class="production-title">
+                <a target="_blank"
+                    href="https://itunes.apple.com/cn/app/iLeetCoder/id1458259471?l=zh&ls=1&mt=8">iLeetCoder</a>
+            </div>
+            <div class="production-comments">for iOS</div>
+            <div class="production-comments">一款精心学习Leetcode算法题目的App。</div>
+            <div class="production-comments">Swift，开源地址：<a href="https://github.com/iHTCboy/iLeetcode-iOS" target="_blank">GitHub</a></div>
         </div>
-        <div class="production-comments">2017 for iOS</div>
-        <div class="production-comments">10000+ IT企业题库，为升职面试准备。</div>
     </div>
-</div>
-<div class="production-item-nobottom">
-    <div class="production-picture">
-        <a target="_blank" href="https://itunes.apple.com/cn/app/mi-ji-yu-zhong-bu-tong-ji/id925021570?l=zh&mt=8" class="bj4"></a>
-    </div>
-    <div class="production-info">
-        <div class="production-title">
-            <a target="_blank" href="https://itunes.apple.com/cn/app/mi-ji-yu-zhong-bu-tong-ji/id925021570?l=zh&mt=8">密记</a>
+    <div class="production-item">
+        <div class="production-picture">
+            <a target="_blank" href="https://itunes.apple.com/cn/app/iWuBi/id1459028801?l=zh&ls=1&mt=8" class="bj2"></a>
         </div>
-        <div class="production-comments">2015 for iOS</div>
-        <div class="production-comments">简单简洁简明简便的生活小密记。</div>
+        <div class="production-info">
+            <div class="production-title">
+                <a target="_blank" href="https://itunes.apple.com/cn/app/iWuBi/id1459028801?l=zh&ls=1&mt=8">爱五笔</a>
+            </div>
+            <div class="production-comments">for iOS</div>
+            <div class="production-comments">五笔输入法学习App，编码和拆字，支持86版和98版/简体和繁体。</div>
+            <div class="production-comments">Swift，开源地址：<a href="https://github.com/iHTCboy/iWuBi" target="_blank">GitHub</a></div>
+        </div>
     </div>
-</div>
+    <div class="production-item">
+        <div class="production-picture">
+            <a target="_blank" href="https://itunes.apple.com/cn/app/iTer/id1224934068?l=zh&ls=1&mt=8" class="bj3"></a>
+        </div>
+        <div class="production-info">
+            <div class="production-title">
+                <a target="_blank" href="https://itunes.apple.com/cn/app/iTer/id1224934068?l=zh&ls=1&mt=8">iTer</a>
+            </div>
+            <div class="production-comments">for iOS</div>
+            <div class="production-comments">10000+ IT企业题库，为升职面试准备。</div>
+            <div class="production-comments">Swift，开源地址：<a href="https://github.com/iHTCboy/iTer" target="_blank">GitHub</a></div>
+        </div>
+    </div>
+    <div class="production-item-nobottom">
+        <div class="production-picture">
+            <a target="_blank" href="https://itunes.apple.com/cn/app/mi-ji-yu-zhong-bu-tong-ji/id925021570?l=zh&mt=8"
+                class="bj4"></a>
+        </div>
+        <div class="production-info">
+            <div class="production-title">
+                <a target="_blank"
+                    href="https://itunes.apple.com/cn/app/mi-ji-yu-zhong-bu-tong-ji/id925021570?l=zh&mt=8">密记</a>
+            </div>
+            <div class="production-comments">for iOS</div>
+            <div class="production-comments">简单简洁简明简便的生活小密记。</div>
+            <div class="production-comments">Objective-C，开源地址：<a href="https://github.com/iHTCboy/SecurityNote" target="_blank">GitHub</a></div>
+        </div>
+    </div>
 
 </div>
 <script>
-  (function () {
-    
-  })()
+    (function () {
+
+    })()
