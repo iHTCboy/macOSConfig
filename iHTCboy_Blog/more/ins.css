@@ -149,6 +149,7 @@
 .track-rcol {
     width: 100%;
     border: 1px solid #eee;
+    margin-bottom: 20px;
 }
 
 .track-list {
@@ -271,6 +272,16 @@
     background-size: cover;
 }
 
+.production-picture .bj5 {
+    background: url(image/CampusOfGLUT.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.production-picture .bj6 {
+    background: url(image/GLUTCloud.jpg) no-repeat center;
+    background-size: cover;
+}
+
 .production-info {
     padding-left: 120px;
     display: block;
@@ -337,6 +348,24 @@
     margin-top:00px;
 }
 
+code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(27, 31, 35, 0.0470588);
+  color: rgb(199, 37, 78);
+  border-radius: 3px;
+  background: white;
+}
+
+.article-entry code {
+	background: white;
+	border: 1px solid #ccc;
+}
+
+.article-entry li code {
+	background: white;
+}
 
 
 /* ====== video ===== */
