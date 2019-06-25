@@ -1,5 +1,15 @@
 {
 	"list": [{
+		"date": "2019-06",
+		"arr": {
+			"year": 2019,
+			"month": 6,
+			"src": [""],
+			"link": ["https://github.com/iHTCboy/OneMindMap/raw/master/MindMapImages/20190613-格雷厄姆的分歧等级-Graham's_Hierarchy_of_Disagreement-zh-hans.png"],
+			"text": ["格雷厄姆的分歧等级-Graham's_Hierarchy_of_Disagreement"],
+			"type": ["image"]
+		}
+	},{
 		"date": "2019-05",
 		"arr": {
 			"year": 2019,
