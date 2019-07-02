@@ -54,10 +54,14 @@ pem：
 
 ### pyOpenSSL 使用
 
-所以，python 解析 `p12` 可以使用 `pyOpenSSL` ，这里就没有什么多说的，看代码就好：
+> High-level wrapper around a subset of the OpenSSL library
+> pyOpenSSL now works with OpenSSL 1.1.1
+
+
+所以，python 解析 `p12` 可以使用 `pyOpenSSL` ，`pyOpenSSL` 是`OpenSSL`的封装，19.0.0 版本支持 OpenSSL 1.1.1。 这里就没有什么多说的，看代码就好，或者看看文档 [pyOpenSSL · PyPI](https://pypi.org/project/pyOpenSSL/)。
+
 
 先安装 `pyOpenSSL`：
-
 
 ```python
 pip install pyOpenSSL
@@ -116,7 +120,7 @@ print('扩展1：', cer.get_extension(0))
 ### 总结
 现在 Xcode8 之后，已经可以通过登陆开发者账号，自动下载和管理证书，从而减少开发者配置证书遇到的各位问题，非常的方便。当然，如果是多人开发或跨域团队，或者不想让开发人员拿到最高权限，使用`p12`还是目前最好的方式！因为如果一个主账号下的子账号都可以操作证书，其实影响和安全性很难保证，所以，苹果也有一定道理，很难在Xcode的账号中，分权限管理吧。
 
-关于证书，这里只是介绍的说说`p12`的简单知识，证书体系有非常多的标准和知识，还需要多学习多实战，加油！
+关于证书，这里只是介绍的说说`p12`的简单知识，证书体系有非常多的标准和知识，还需要多学习多实战，等有时间在整理总结一下啊，大家一起加油！
 
 
 ### 参考
@@ -126,7 +130,8 @@ print('扩展1：', cer.get_extension(0))
 - [iOS开发者证书-详解/生成/使用 - Echo's Blog -](http://nuoerlz.is-programmer.com/posts/47670.html)
 - [Python查看ipa UDID和其他基本信息 - 简书](https://www.jianshu.com/p/7b84f95bdf6f)
 - [那些证书相关的玩意儿(SSL,X.509,PEM,DER,CRT,CER,KEY,CSR,P12等) - guogangj - 博客园](https://www.cnblogs.com/guogangj/p/4118605.html)
-
+- [pyOpenSSL · PyPI](https://pypi.org/project/pyOpenSSL/)
+- 
 <br>
 
 - 如有疑问，欢迎在评论区一起讨论！
