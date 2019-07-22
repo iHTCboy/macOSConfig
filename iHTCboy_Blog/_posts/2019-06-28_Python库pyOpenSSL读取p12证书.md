@@ -16,24 +16,24 @@ reward: true
 
 ### 2、p12证书
 
-在讲解之前，先给大家说说原理。 `p12` --- KCS12 file holds the private key and certificate. Mac电脑显示的名字为：个人信息交换（personal information exchange file）
+在讲解之前，先给大家说说原理。 `p12` --- KCS12 file holds the private key and certificate。 macOS系统查看时显示的p12名字为：个人信息交换（personal information exchange file）
 
 `p12` 存放了证书和私钥，使用的是DER编码。那什么是DER呢? 这里就要讲讲证书的知识：
 
 #### 证书标准
-`X.509` - 一种证书标准，主要定义了证书中应该包含哪些内容。其详情可以参考`RFC5280`，`SSL` 使用的就是这种证书标准。
+`X.509`：是一种证书标准，主要定义了证书中应该包含哪些内容。其详情可以参考`RFC5280`，`SSL` 使用的就是这种证书标准。
 
 #### 编码格式
 同样的`X.509`证书，可能有不同的编码格式，目前有以下两种编码格式：
 
-- `DER` - Distinguished Encoding Rules，打开看是二进制格式，不可读.
+- `DER`：Distinguished Encoding Rules，打开看是二进制格式，不可读.
 
-- `PEM` - Privacy Enhanced Mail，打开看文本格式，以"-----BEGIN..."开头，"-----END..."结尾,内容是BASE64编码。
+- `PEM`：Privacy Enhanced Mail，打开看文本格式，以"-----BEGIN..."开头，"-----END..."结尾,内容是BASE64编码。
 
 
-所以，要查看`p12`的内容，最好是转换成`PEM`格式。那么这里一种证书标准的格式，就需要实现了这种标准的工具就能解析：
+因为`p12`是`DER`编码，所以要查看`p12`的内容，当然最好从`DER`编码转换成`PEM`格式。那么因为这是一种证书标准的格式，就需要实现了这种标准的工具就能解析：
 
-- `OpenSSL` - OpenSSL是`SSL`的一个实现，SSL只是一种规范。理论上来说，SSL这种规范是安全的，目前的技术水平很难破解，但SSL的实现就可能有些漏洞，如著名的"心脏出血"。OpenSSL还提供了一大堆强大的工具软件，强大到90%我们都用不到。
+- `OpenSSL`：是`SSL`的一个实现，SSL只是一种规范。理论上来说，SSL这种规范是安全的，目前的技术水平很难破解，但SSL的实现就可能有些漏洞，如著名的"心脏出血"。OpenSSL还提供了一大堆强大的工具软件，强大到90%我们都用不到。
 
 所以，使用 `OpenSSL` 就可以读取`p12`的信息，可以通过以下命令把`p12`转换为`pem`：
 
@@ -53,6 +53,8 @@ pem：
 ![20190628-HTC.pem.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2019/06/20190628-HTC.pem.png)
 
 ### pyOpenSSL 使用
+
+`pyOpenSSL` 库简介：
 
 > High-level wrapper around a subset of the OpenSSL library
 > pyOpenSSL now works with OpenSSL 1.1.1
@@ -131,7 +133,7 @@ print('扩展1：', cer.get_extension(0))
 - [Python查看ipa UDID和其他基本信息 - 简书](https://www.jianshu.com/p/7b84f95bdf6f)
 - [那些证书相关的玩意儿(SSL,X.509,PEM,DER,CRT,CER,KEY,CSR,P12等) - guogangj - 博客园](https://www.cnblogs.com/guogangj/p/4118605.html)
 - [pyOpenSSL · PyPI](https://pypi.org/project/pyOpenSSL/)
-- 
+
 <br>
 
 - 如有疑问，欢迎在评论区一起讨论！

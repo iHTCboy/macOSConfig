@@ -7,13 +7,12 @@ reward: true
 ---
 
 ###  一、前言
-* * *
+
 最近开始入门python，当然是要使用PyCharm，然后在项目中遇到.db数据库文件，双击打不开？网上找到了windows版本的教程，版本也比较旧，所以有空就来一发，当备忘也好~
 
 <!--more-->
 
 ### 二、链接SQLite
-* * *
 ###### 2.1 控制台创建数据库DB文件
 
 ![创建数据库DB文件](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2018/04/20180403-createDBfile.png)
@@ -38,7 +37,6 @@ PyCharm自动打开Sqlite数据库：
 
 
 ### 三、操作数据库
-* * *
 ######  3.1 创建一张表
 ![createTable](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2018/04/20180403-createTable.png)
 
@@ -100,8 +98,7 @@ select * from iProduct;
 ```
 
 ### 四、总结
-* * *
-通过PyCharm进行SQLite操作，之前真没有想到PyCharm如此强大！IDE就是`IDE`，收费也是硬道理！希望好好利用PyCharm做更多有趣的事件~
+通过PyCharm进行SQLite操作，之前真没有想到PyCharm如此强大！IDE就是`IDE`，收费也是硬道理！希望好好利用PyCharm做更多有趣的Py事情，加油~
 
 
 ### 五、参考引用
