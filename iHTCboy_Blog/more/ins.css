@@ -302,6 +302,13 @@
     margin-top: 22px;
 }
 
+.production-alink {
+    display:inline-block;
+    overflow:hidden;
+    margin-top: 5px;
+}
+
+
 @media screen and (max-width:600px) {
     .production-item {
         width: 100%;

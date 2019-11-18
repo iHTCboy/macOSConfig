@@ -69,7 +69,7 @@ pem：
 pip install pyOpenSSL
 ```
 
-`p12`文件读取代码：
+`p12`文件读取，Python3 示例代码：
 
 ```python
 # load OpenSSL.crypto
