@@ -1,5 +1,35 @@
 {
 	"list": [{
+		"date": "2019-11",
+		"arr": {
+			"year": 2019,
+			"month": 11,
+			"src": [""],
+			"link": ["https://github.com/iHTCboy/OneMindMap/raw/master/MindMapImages/20191124-消费者剩余和生产者剩余.png"],
+			"text": ["消费者剩余和生产者剩余"],
+			"type": ["image"]
+		}
+	},{
+		"date": "2019-11",
+		"arr": {
+			"year": 2019,
+			"month": 11,
+			"src": [""],
+			"link": ["https://github.com/iHTCboy/OneMindMap/raw/master/MindMapImages/20191123-UGC&PGC&OGC.png"],
+			"text": ["互联网内容生产者：UGC PGC OGC"],
+			"type": ["image"]
+		}
+	},{
+		"date": "2019-08",
+		"arr": {
+			"year": 2019,
+			"month": 8,
+			"src": [""],
+			"link": ["https://github.com/iHTCboy/OneMindMap/raw/master/MindMapImages/20190825-心流-Flow-01.png"],
+			"text": ["心流-Flow"],
+			"type": ["image"]
+		}
+	},{
 		"date": "2019-06",
 		"arr": {
 			"year": 2019,
@@ -19,7 +49,7 @@
 			"text": ["计算机组成原理知识地图-徐文浩"],
 			"type": ["image"]
 		}
-	}, {
+	},{
 		"date": "2019-04",
 		"arr": {
 			"year": 2019,
