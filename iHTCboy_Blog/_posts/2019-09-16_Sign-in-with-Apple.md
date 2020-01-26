@@ -1,4 +1,4 @@
-title: Sign in with Apple 登录方式
+title: Sign in with Apple 登录详解
 date: 2019-09-16 22:49:16
 categories: technology #induction life poetry
 tags: [Sign-in-with-Apple, 苹果登录方式]  # <!--more-->
