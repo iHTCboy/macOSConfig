@@ -1,0 +1,60 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 7,
+      "subtext" : {
+        "size" : 12,
+        "colorSelected" : "#FFFFFFA7",
+        "font" : "System",
+        "color" : "#FFFFFF4F"
+      },
+      "shortcut" : {
+        "size" : 16,
+        "colorSelected" : "#FFFFFF9E",
+        "font" : "System",
+        "color" : "#FFD478FF"
+      },
+      "backgroundSelected" : "#00000051",
+      "text" : {
+        "size" : 21,
+        "colorSelected" : "#37ADFFFF",
+        "font" : "System",
+        "color" : "#FFFFFF8A"
+      },
+      "iconPaddingHorizontal" : 6,
+      "paddingVertical" : 4,
+      "iconSize" : 44
+    },
+    "separator" : {
+      "color" : "#CD00FFFF",
+      "thickness" : 0
+    },
+    "search" : {
+      "paddingVertical" : 7,
+      "background" : "#00000000",
+      "spacing" : 5,
+      "text" : {
+        "size" : 40,
+        "colorSelected" : "#000000FF",
+        "font" : "System Light",
+        "color" : "#FFFFFFFF"
+      },
+      "backgroundSelected" : "#B2D7FFFF"
+    },
+    "scrollbar" : {
+      "color" : "#00000033",
+      "thickness" : 3
+    },
+    "name" : "iHTCboy",
+    "window" : {
+      "color" : "#00000085",
+      "paddingHorizontal" : 0,
+      "width" : 573,
+      "borderPadding" : 0,
+      "borderColor" : "#000000FF",
+      "blur" : 25,
+      "roundness" : 3,
+      "paddingVertical" : 5
+    }
+  }
+}
