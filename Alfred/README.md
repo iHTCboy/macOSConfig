@@ -15,13 +15,16 @@ My Mac config/backup files for macOS.
 ### Workflows（工作流）
 存放共享的 Alfred Workflows 的目录
 
-#### 1、CopyPath.alfredworkflow
+#### 1、Copy Path.alfredworkflow
 
 快捷复制当前Finder选择的文件(`cp`)的文件路径或文件名(`cpn`)
 
+下载：[macOSConfig/Copy Path.alfredworkflow at master · iHTCboy/macOSConfig](https://github.com/iHTCboy/macOSConfig/blob/master/Alfred/Workflows/Copy%20Path%20v1.0.alfredworkflow)
 
-#### 2、Reply Message v1.0.alfredworkflow
+#### 2、Reply Message.alfredworkflow
 在微信 Mac/PC 端消息有个「引用」的功能，用于针对某个特定消息回复，而其它 App 没有该功能，这个workflow可以读取你复制的东西，给你生成一个带引用格式的文本，并完成后粘贴到App就可以实现引用回复了。
+
+下载：[Reply Message v1.0.alfredworkflow](https://github.com/iHTCboy/macOSConfig/raw/master/Alfred/Workflows/Reply%20Message%20v1.0.alfredworkflow)
 
 1. `自动模板`：复制内容，打开 Alfred 输入 `R` 键后回车，就会自动粘贴到聊天软件中
 ![Alfred-Copy-Template.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2019/11/Alfred-Copy-Template.png)
