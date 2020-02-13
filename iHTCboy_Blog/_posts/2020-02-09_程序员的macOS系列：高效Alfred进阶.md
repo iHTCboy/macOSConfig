@@ -27,6 +27,8 @@ reward: true
 
 小帽子 `Alfred`（读`['ælfrid]`） 是 macOS 平台强大的效率软件！被誉为神兵利器！我们本篇文章基于2020年1月17号更新的版本 `Alfred 4.0.8（Build 1135）`，所以如果低于此版本导致部分功能没有的，请更新最新版本。或者有新功能此版本没有提及的，请以官网为准 [Alfred - Productivity App for macOS](https://www.alfredapp.com/)。
 
+![Alfred-4.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2020/02/Alfred-4.png)
+
 需要注意的是，本文是以提高效率为准，不会讲解如何制作 Workflows（工作流），只会讲解有那些好用的工作流。另外，网上的教程很多都是15、16年为主，新的教程还是以其一功能为主讲，我一直思考，`怎么才能让新手从入门到精通 Alfred 呢？`，所以，为了让大家全面的了解，这里会从 Alfred 的偏好设置开始讲解，从上往下，一个一个解析，中间串插对整个功能的讲解。另外，如果操作或流程很简单的，也不提供截图。下面就让我们开始吧！
 
 ### General（通用设置）
@@ -145,7 +147,7 @@ Open.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2020/02/Alfr
 设置操作缓存文件后从缓存区清除文件，如果5分钟不使用缓存文件时也清除。
 
 - `Compatibility`（兼容性）
-如果上面的 `Alt`键 + 方向键与其它的操作冲突了，那么可以勾选这个复选框，那么将使用 `shift + Alft + 方向键` 来操作文件缓存。
+如果上面的 `Alt`键 + 方向键与其它的操作冲突了，那么可以勾选这个复选框，那么将使用 `Shift + Alt + 方向键` 来操作文件缓存。
 
 ##### Advanced（增强）标签
 设置文件搜索的高级配置项。默认就好，一般不需要关注。
@@ -299,16 +301,16 @@ Snippets 主要是对于经常键入的文本的创建和共享代码段，例�
 
 ![Alfred-Features-Snippets-Copy-Paste.gif](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2020/02/Alfred-Features-Snippets-Copy-Paste.gif)
 
-这里，我只需要复制图片的名字（通过回`车键`快速重命名文件名的方式，`⌘ + A`全选再`⌘ + C`复制文件名，当然通过下文的 Workflows 也可以快捷复制文件名。），然后 `alt + ⌘ + C` 快速打开 `剪切版历史视图`，输入快捷关键词（`gimg`，不用输完，可以模糊匹配。）然后回车键就完成 markdown 格式图片生成。当然，最后二步可以合并成一步，就是在上图配置Snippets时，勾选 `Auto expansion allowed`，这样，直接在需要输入的地方输入 `gima` 就会显示替换的内容，又减少一步操作。大家有没有感觉比每次都记忆，`Snippet`（字符片段）是不是更快了~
+这里，我只需要复制图片的名字（通过`回车键`快速重命名文件名的方式，`⌘ + A`全选再`⌘ + C`复制文件名，当然通过下文的 Workflows 也可以快捷复制文件名。），然后 `alt + ⌘ + C` 快速打开 `剪切版历史视图`，输入快捷关键词（`gimg`，不用输完，可以模糊匹配。）然后回车键就完成 markdown 格式图片生成。当然，最后二步可以合并成一步，就是在上图配置Snippets时，勾选 `Auto expansion allowed`，这样，直接在需要输入的地方输入 `gima` 就会显示替换的内容，又减少一步操作。大家有没有感觉到每次记忆无关的链接和信息的痛苦，`Snippet`（字符片段）是不是更快了~
 
 另外，这里 Alfred 提供了一些替换时的 `占位符`，就是替换时，会自动变的，比如 `{time}`（如：16:26:23）、`{date}`（如：2020年2月9日）、`{clipboard}`（当前剪切版的内容）、`{random}`（注：`{random:..}`表示随机数，其它表示见编辑窗口的左下角`{}`。）等，更强大的替换操作， Alfred 建议使用 Workflow Snippet Trigger object。
 
-如果一些 `Emoji`，可能通过 macOS 系统快捷键`ctrl + command + 空格键`打开表情界面选择需要的表情，但是这个查找过程也是很麻烦，有几百个 Emoji，所以其实可以通过 Snippet 来快速输入：
+例如输入 `Emoji`，可以通过 macOS 系统快捷键`ctrl + command + 空格键`打开表情界面选择需要的表情，但是这个查找过程也是很麻烦，有几百个 Emoji，所以其实可以通过 Snippet 来快速输入：
 ![Alfred-Features-Snippets-Emoji.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2020/02/Alfred-Features-Snippets-Emoji.png)
 
 以上的 Emoji 表格，可以通过下载导入到你的 Alfred 中，下载地址：[macOSConfig/Alfred/Snippets · iHTCboy/macOSConfig](https://github.com/iHTCboy/macOSConfig/tree/master/Alfred/Snippets)。
 
-更多 Snippet 分组，需要查看官网推荐 [Snippets - Alfred](https://www.alfredapp.com/extras/snippets/)：
+更多 Snippet 分组，可以查看官网推荐 [Snippets - Alfred](https://www.alfredapp.com/extras/snippets/)：
 
 * [Mac Symbols](https://www.alfredapp.com/media/snippets/Mac%20symbols.alfredsnippets)：集合了很多常用的Mac符号，比如输入 `!!cmd` 对应 `⌘`符号，“!!shift”对应“⇧”符号等等。有了这个集合，就再也不用在符号表中辛辛苦苦去找某个Mac标志符号了。
 * [ASCII Art](https://www.alfredapp.com/media/snippets/Ascii%20Art.alfredsnippets)：集合了一些好玩的火星文字表情，比如 ` (╯°□°）╯︵ ┻━┻ `。
@@ -335,7 +337,7 @@ Snippets 主要是对于经常键入的文本的创建和共享代码段，例�
 * `{time}`：显示当前时间
 * `{datetime}`：显示当前日期和时间
 
-日期和时间都有`short`、`medium`、`long`和`full`这几种显示方式，Alfred 默认的为midium。要想改变显示方式，只需在关键字后面接上相应的方式名称即可，例如`{date:long}`。这些显示方式的具体格式可以在系统的偏好设置设置 -> 时间&区域 中查看.
+日期和时间都有`short`、`medium`、`long`和`full`这几种显示方式，Alfred 默认的为midium。要想改变显示方式，只需在关键字后面接上相应的方式名称即可，例如`{date:long}`。这些显示方式的具体格式可以在系统的 `偏好设置设置 ` -> `语言和区域` -> `高级` 中查看.
 
 不仅能显示当前时间，还可以利用加减算数符号进行计算之后，显示过去或者未来的日期时间，比如 `{date +1D}` 会显示明天的日期，`{time -3h -30m}` 会显示3个半小时之前的时间等等。支持的算子有以下几种：
 
@@ -450,7 +452,7 @@ Alfred 支持系统功能操作，例如：`Screen Saver`（显示待机屏幕�
 #### Terminal（终端）
 ![Alfred-Features-Terminal.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2020/02/Alfred-Features-Terminal.png)
 
-从 Alfred 在终端中运行命令和脚本，运行 shell 和终端命令，可以设置使用 `>` 或其它更改为前缀符号来表示当前要执行命令，默认是打开 macOS 的`终端`软件，也可以更改为打开 `iTerm`，关于 iTerm 软件的使用和快捷键可以查看我之前的文章。
+从 Alfred 在终端中运行命令和脚本，运行 shell 和终端命令，可以设置使用 `>` 或其它更改为前缀符号来表示当前要执行命令，默认是打开 macOS 的`终端`软件，也可以更改为打开 `iTerm`，关于 iTerm 软件的使用和快捷键可以查看我之前的文章 [iTerm2快捷键小记](https://ihtcboy.com/2018/08/03/2018-08-03_iTerm%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%B0%8F%E8%AE%B0/)。
 
 ![Alfred-Features-Terminal-Shell.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2020/02/Alfred-Features-Terminal-Shell.png)
 
@@ -512,14 +514,14 @@ end alfred_script
 #### Previews（预览）
 ![Alfred-Features-Previews.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2020/02/Alfred-Features-Previews.png)
 
-熟悉 macOS 系统的同学都知道，macOS 有一个很方便的功能叫 `Quick Look`，就是在 Finder 中选中文件后按下 空白键（Space键），就能在不打开应用程序的情况下对文件进行快速预览，比如PDF、图片、视频、音频文件等等。Alfred 也集成了这一功能，不过此时的快捷键就不是Space了，而是 `⇧`键（`shift`键）。在 Alfred 的搜索结果列表中选中想要进行预览的文件，按下 shift键就能利用 Quick Look 进行预览了。有时候对某些文件或者某些路径下的文件进行预览，如果你不想对这些文件或者路径下的文件进行预览，可以在 `No Previews For` 和 `No Previews In`中设置。
+熟悉 macOS 系统的同学都知道，macOS 有一个很方便的功能叫 `Quick Look`，就是在 Finder 中选中文件后按下 `空格键`（Space键），就能在不打开应用程序的情况下对文件进行快速预览，比如PDF、图片、视频、音频文件等等。Alfred 也集成了这一功能，不过此时的快捷键就不是Space了，而是 `⇧`键（`shift`键）。在 Alfred 的搜索结果列表中选中想要进行预览的文件，按下 shift键就能利用 Quick Look 进行预览了。有时候对某些文件或者某些路径下的文件进行预览，如果你不想对这些文件或者路径下的文件进行预览，可以在 `No Previews For` 和 `No Previews In`中设置。
 
 ### Workflows（工作流）
 ![Alfred-Workflows.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2020/02/Alfred-Workflows.png)
 
-`Workflows` 翻译中文为**工作流**，应该也比较好理解。网上上面介绍的功能，有一部分就是工作流，可以理解为Alfred自带的工作流。类似的，你是不是能想到一些可以定制化的操作流程呢？所以，当然也可以使用第三方的工作流，或者自己定义自己的工作流！
+`Workflows` 翻译中文为**工作流**，应该也比较好理解。刚才上面介绍的功能，有一部分就是工作流，可以理解为Alfred自带的工作流。类似的，你是不是能想到一些可以定制化的操作流程呢？所以，当然也可以使用第三方的工作流，或者自己定义自己的工作流！
 
-如果想要使用第三方的或者自定义的工作流，需要支付购买Alfred的`PowerPack`，Alfred的 PowerPack 是最值得购买的服务，没有之一。因为如果使用 Alfred 而没有 PowerPack 授权，那 Alfred 的强大的功能相当失去了左右臂。关于 PowerPack 细节我们在下一节内容在讨论，我们接着说 Workflows（工作流）。
+如果想要使用第三方的或者自定义的工作流，需要支付购买Alfred的`PowerPack`（动力组），Alfred的 PowerPack 是最值得购买的服务，没有之一。因为如果使用 Alfred 而没有 PowerPack 授权，那 Alfred 的强大的功能相当失去了左右臂。关于 PowerPack 细节我们在下一节内容在讨论，我们接着说 Workflows（工作流）。
 
 Alfred 安装完「Powerpack」，就像车体安装了引擎，余下的事情就看我们如何 DIY，让引擎为我们提供无限动力。而引擎提供动力的燃料我们称其为 `Workflow`。官方对于 workflow 是这样描述的：
 
@@ -531,7 +533,7 @@ Alfred 安装完「Powerpack」，就像车体安装了引擎，余下的事情�
 > 我们在这里手工挑选了一些最佳的工作流程。在 [Packal](http://www.packal.org)（一个出色的由用户创建上传的workflows的网站）上以及 [Alfred Forum](https://alfredforum.com)（您可以在其中找到有关创建自己的workflows的帮助）的更多信息。
 
 
-#### 认识 workflow 结构
+#### 认识 Workflows 结构
 
 实现 WorkFlows 的四个基本对象：`trigger`、`keyword`、`action`、`output`。Alfred 通过将这四个基本对象合理链接「Connect」，便能实现各种高级功能。而在 Alfred 的 Workflow 配置界面中，大体上可以将其分为三栏，trigger 和 keyword 都会触发后续行为，所以归到「原因」类；Action 是「过程」类，也是 workflow 的核心，它负责处理用户需求；而 output 是「结果」类，负责把 action 的结果以一定的形式传递给用户，可以是直接屏显，也可以是另存为文件，也可以是返回到最后一个程序的输入框中。总之这三个类别「四个对象」各司其职，最终可以完成较为复杂的数据处理和用户需求。而这四个对象都可以用「线」链接，来形成直接或间接的条件结果关系。
 
@@ -651,13 +653,15 @@ Alfred 默认的样式是白色背景不太好看，当然也提供了几个外�
 
 Alfred 同时也支持使用 `移动端版本的 Alfred` 来控制桌面端，下载链接 [Alfred Remote on the App Store for iOS](https://apps.apple.com/app/alfred-remote/id927944141?ign-mpt=uo%3D4)。
 
-`Alfred Remote for iOS` 最新版本 1.1 是 2015年9月1日发布的，收费 30 人民币。如今5年不更新了，所以暂时不指望它带来什么高效，大家暂时也别下载吧。如果需要了解，可以参考这个文章的教程：[OS X 效率启动器 Alfred 的最佳伴侣：Alfred Remote for iOS 上手详解 - 少数派](https://sspai.com/post/28137)。
+`Alfred Remote for iOS` 最新版本 1.1 是 2015年9月1日发布的，收费 30 人民币。如今5年不更新了，所以暂时不指望它带来什么高效，建议大家暂时也别下载吧。如果需要了解更多，可以参考这个文章的教程：[OS X 效率启动器 Alfred 的最佳伴侣：Alfred Remote for iOS 上手详解 - 少数派](https://sspai.com/post/28137)。
 
 ### Advanced（高级）
 ![Alfred-Advanced.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2020/02/Alfred-Advanced.png)
 
+配置中有涉及一些高级配置功能，一般不需要更改配置。
+
 - `Files / Apps`
-配置中有涉及 `Clear Application Cache`(缓存清理)、`Rebuild macOS Metadata`(元数据重建) 等高级配置功能，一般不需要配置。
+对 Alfred 和 搜索引擎重置，`Clear Application Cache`(缓存清理)、`Rebuild macOS Metadata`(元数据重建) 。
 
 - `Force Keyboard`
 就是 Alfred 输入框中默认的输入法。
@@ -700,7 +704,7 @@ Alfred 同时也支持使用 `移动端版本的 Alfred` 来控制桌面端，�
 ### Usage（使用情况）
 ![Alfred-Usage.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2020/02/Alfred-Usage.png)
 
-Alfred 会统计使用的情况。从上图可以看到折线图显示的是28天的使用情况（当然因为编写文章时，因春节放假，所以有一个波谷区。），从2019年9月2号起，使用 Alfred 达到 6321 次，平均每天使用 39 次。同时也可以看到 Clipboard 和 Hotkeys 使用最频繁。为了说明 Alfred 的潜在价值，我们不妨做一个简单的计算，假设每天我都能够保持现况以每日平均唤醒 39 次为基数。假如每次 Alfred 的操作，可以为我节省 5s 的时间（往往有些复杂的操作会大于 5s，比如去寻找一个藏得很深的文件，或者一个记不全的文件或者一个不常用的软件，或者打开一个常用的书签等等)，那么 1 年下来，竟然能够节省 0.82 天。
+Alfred 会统计使用的情况。从上图可以看到折线图显示的是28天的使用情况（`当然因为编写文章时，因春节放假，所以有一个波谷区。`），从2019年9月2号起，使用 Alfred 达到 6321 次，平均每天使用 39 次。同时也可以看到 `Clipboard` 和 `Hotkeys` 使用最频繁。为了说明 Alfred 的潜在价值，我们不妨做一个简单的计算，假设每天我都能够保持现况以每日平均唤醒 39 次为基数。假如每次 Alfred 的操作，可以为我节省 5s 的时间（往往有些复杂的操作会大于 5s，比如去寻找一个藏得很深的文件，或者一个记不全的文件或者一个不常用的软件，或者打开一个常用的书签等等)，那么 1 年下来，竟然能够节省 0.82 天。
 
 ` 39 * 5 * 365 / 3600 / 24 = 0.823784722 天`
 
@@ -716,7 +720,7 @@ Alfred 会统计使用的情况。从上图可以看到折线图显示的是28�
 ### Update（更新）
 ![Alfred-Update.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2020/02/Alfred-Update.png)
 
-这个更新页面也很重要，让我们了解到最新版本到底做了什么调整或新的功能。我发现很多应用没有做好 ChangeLog，至少说明软件做的不够用心，用户关心的不是你有多牛逼，自己使用自己体验，更新说明文档是一项软件开发中非常重要的一部分。这里就不细说了，有时候在其它文章在一起聊。
+这个更新页面也很重要，让我们了解到最新版本到底做了什么调整或新的功能。我发现很多应用没有做好 ChangeLog，至少说明软件做的不够用心，用户关心的不是你有多牛逼，自己使用自己体验，更新说明文档是一项软件开发中非常重要的一部分。这里就不细说了，有时间在写文章一起聊吧。
 
 ### 其它问题汇总
 在这里汇总一下，在使用 Alfred 时可能遇到的一些问题，这部分在后续会持续更新。其中，首次安装或启动时，默认会显示这样的权限弹窗：
