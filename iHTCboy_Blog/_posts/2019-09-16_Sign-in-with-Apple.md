@@ -7,7 +7,7 @@ reward: true
 ---
 
 ### 1、前言
-iOS 13 最大的亮点是 `Dark` 模式，另一个就是苹果登录（Sign in with Apple）方式的增加，让苹果生态又多了一层体验，苹果的生态建设越来越好，让iOS开发者成为 Apple 全栈开发的可能性更接近，对于开发者来说，用好 API ，然后看到苹果这些年对生态的建设，还是有很多想象力！
+iOS 13 最大的亮点是 `Dark` 模式，另一个就是苹果登录（`Sign in with Apple`）方式的增加，让苹果生态又多了一层体验，苹果的生态建设越来越好，让iOS开发者成为 Apple 全栈开发的可能性更接近，对于开发者来说，用好 API ，然后看到苹果这些年对生态的建设，还是有很多想象力！
 
 <!--more-->
 
@@ -53,7 +53,7 @@ iOS 13 最大的亮点是 `Dark` 模式，另一个就是苹果登录（Sign in 
 ![Sign-in-with-Apple-01.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2019/09/Sign-in-with-Apple-01.png)
 
 详细注意事件：
-1、创建 Apple ID时，描述内容的 Description 会显示在用户的解绑苹果登录的应用名里，所以可能真实游戏名有变动时，需要更新描述，不然在用户手机端显示就很对不上，影响体验。因为使用过苹果登录后，在设置时查看 使用 Apple ID 的 App 时，名字就是上面的 description。
+1、创建 Apple ID时，描述内容的 Description 会显示在用户的授权过苹果登录的应用名里，所以App应用名有变动时，记得更新此描述，不然在用户手机端显示就很对不上，或者填写了随意文本内容，会影响用户端显示的名字不友好。因为使用过苹果登录后，在设置时查看 **使用 Apple ID** 的 App 时，名字就是上面的 **description**。
 
 
 **以下为针对 `服务端验证` 和 `web 端授权登录` 的操作。**
@@ -242,7 +242,7 @@ Sign in with Apple 登录是支持跨平台，安卓和 windows 的 web 页面�
 4. 停止App 使用Sign In With Apple 的方式：
    `设置 -> Apple ID -> 密码与安全性 -> 使用您AppleID的App -> 找到对应的App - > “停止以Apple ID使用 Bundle ID...”`；
    注：用户可以关闭接收转发的邮件。
-5. 苹果登录的界面只支持竖屏显示，跟内购买弹窗一样，无法控制横屏游戏时显示横屏苹果登录界面。
+1. 苹果登录的界面只支持竖屏显示，跟内购买弹窗一样，无法控制横屏应用或游戏时显示横屏的苹果登录界面UI。（个人推测是因为 Face ID 目前在 iPhone 只能竖屏识别，而苹果登陆可以使用 Face ID 来授权而不用输入密码。）
 
 
 ### 参考

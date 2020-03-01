@@ -822,6 +822,6 @@ Alfred 会统计使用的情况。从上图可以看到折线图显示的是28�
 
 <br>
 
-> 注：本文首发于 [iHTCboy's blog](https://iHTCboy.com)，如若转载，请注来源
+> 注：本文首发于 [iHTCboy's blog](https://iHTCboy.com)，如若转载，请注来源。
 
 <br>
