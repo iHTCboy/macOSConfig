@@ -116,13 +116,14 @@
         var data = res.list[j].arr;
         var liTmpl = "";
         for (var i = 0, len = data.link.length; i < len; i++) {
-          var minSrc = data.link[i];
-          var src = data.link[i];
-          var type = data.type[i];
+          var minSrc = 'https://github.com/iHTCboy/OneMindMap/raw/master/Thumbnail/' + data.link[i];
+          var src = 'https://github.com/iHTCboy/OneMindMap/raw/master/MindMapImages/' + data.link[i];
+          var size = data.size[i];
+          var type = 'image';//data.type[i];
           var target = src;//+ (type === 'video' ? '.mp4' : '.jpg');
 
           liTmpl += '<figure class="thumb" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">\
-                <a href="' + src + '" itemprop="contentUrl" data-size="960x960" data-type="' + type + '" data-target="' + target + '">\
+                <a href="' + src + '" itemprop="contentUrl" data-size="' + size + '" data-type="' + type + '" data-target="' + target + '">\
                   <img class="reward-img" data-type="' + type + '" data-src="' + minSrc + '" src="/img/empty.png" itemprop="thumbnail" onload="lzld(this)">\
                 </a>\
                 <figcaption style="display:none" itemprop="caption description">' + data.text[i] + '</figcaption>\
@@ -168,7 +169,7 @@
     function loadData(success) {
       if (!searchData) {
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', './ins.json?t=' + +new Date(), true);
+        xhr.open('GET', './onemindmap.json?t=' + +new Date(), true);
 
         xhr.onload = function() {
           if (this.status >= 200 && this.status < 300) {

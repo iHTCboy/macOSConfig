@@ -396,7 +396,7 @@ npm install hexo-server --save
 其它版本：[为自定义域名的GitHub Pages添加SSL 完整方案](https://segmentfault.com/a/1190000007740693)
 
 
-### 15.文件更新
+### 15.文章更新
 
 - 2018.02.25
 增加 Gitment 接入说明 [Gitment评论功能接入踩坑教程 | iHTCboy's blog](https://ihtcboy.com/2018/02/25/2018-02-25_Gitment评论功能接入踩坑教程/)
@@ -410,7 +410,18 @@ npm install hexo-server --save
 <`script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>`
 只需要修改该js域名，其他均未改变。
 
+
+- 2020.03.22
+增加博客主题、相册功能、留言功能参考
+    * [Hexo+Github实现相册功能 | Lawlite的博客](http://www.lawlite.me/2017/04/13/Hexo-Github%E5%AE%9E%E7%8E%B0%E7%9B%B8%E5%86%8C%E5%8A%9F%E8%83%BD/)
+    * [相册 | Litten的博客](http://litten.me/photos/)
+    * [Hexo+yilia主题实现文章目录和添加视频 | Lawlite的博客](http://www.lawlite.me/2017/04/17/Hexo-yilia%E4%B8%BB%E9%A2%98%E5%AE%9E%E7%8E%B0%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95%E5%92%8C%E6%B7%BB%E5%8A%A0%E8%A7%86%E9%A2%91/#%E4%B8%80%E3%80%81%E8%AF%B4%E6%98%8E)
+    * [Hexo博客Yilia主题修改记录 | 公子笑的主站](https://gzx97.com/posts/20223/#%E8%AF%B4%E6%98%8E)
+
+
+
 <br>
+
 > 注：本文首发于 [iHTCboy's blog](http://iHTCboy.com)，如若转载，请注来源
 
 
