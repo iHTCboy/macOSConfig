@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/HTC/.oh-my-zsh"
+export ZSH="/Users/efun/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -105,19 +105,19 @@ alias hdg="hexo clean; hexo deploy -g"
 alias macss="sudo spctl --master-disable"
 alias macssab="sudo spctl --master-enable"
 alias cls='clear'
-alias mkipa='sh /Users/HTC/Documents/Efun/ipa.sh'
+alias mkipa='sh /Users/efun/Documents/Efun/ipa.sh'
 alias zshconfig='vim ~/.zshrc'
-alias epodpush='sh /Users/HTC/Documents/Programing/Efun/EfuniOS/PrivateCocoaPodConfigurator/release.sh'
-alias htcbg='cd /Users/HTC/Documents/Personal/P-Project/iHTCBlog/'
-alias imgbg='cd /Users/HTC/Documents/Personal/P-Project/iGallery/'
+alias epodpush='sh /Volumes/APPLE-HDD/Document/EfunProject/EfunScripts/release.sh'
+alias htcbg='cd /Users/efun/Documents/Personal/P-Project/iHTCBlog/'
+alias imgbg='cd /Users/efun/Documents/Personal/P-Project/iGallery/'
 
 
 # Android dev
-export PATH=${PATH}:/Users/HTC/Library/Android/sdk/platform-tools
-export PATH=${PATH}:/Users/HTC/Library/Android/sdk/tools
+export PATH=${PATH}:/Users/efun/Library/Android/sdk/platform-tools
+export PATH=${PATH}:/Users/efun/Library/Android/sdk/tools
 
 # Flutter 
-export PATH=${PATH}:/Users/HTC/Documents/Programing/Flutter/flutter/bin
+export PATH=${PATH}://Volumes/APPLE-HDD/Document/Coding/Flutter/flutter/bin
 
 # Git
 alias gam="git add .; git commit -m "
