@@ -1,0 +1,35 @@
+---
+layout: post
+slug: "photos"
+title: "Love"
+noDate: "true"
+comments: "false"
+reward: false
+open_in_new: false
+---
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+<div id="main">
+	<div id="clock-box">
+		亲爱的 <span class="name">婷哥</span>，我们已经共同走过
+		<div id="clock"></div>
+	</div>
+</div>
+<link type="text/css" rel="stylesheet" href="/love/love.css">
+<script type="text/javascript" src="/love/love.js" charset="utf-8"></script>
+<script>
+	$("#clock-box").fadeIn(2000);
+	function createtime() {
+		var together = new Date();
+		together.setFullYear(2015, 12, 31);
+		together.setHours(18);	
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		timeElapse(together);
+	}
+	setInterval("createtime()", 250);
+</script>
+
+<!-- GitHub: https://github.com/xelzmm/Love -->

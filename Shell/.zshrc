@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/efun/.oh-my-zsh"
+export ZSH="/Users/HTC/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -104,20 +104,13 @@ alias lpi="lipo -i"
 alias hdg="hexo clean; hexo deploy -g"
 alias macss="sudo spctl --master-disable"
 alias macssab="sudo spctl --master-enable"
-alias cls='clear'
-alias mkipa='sh /Users/efun/Documents/Efun/ipa.sh'
 alias zshconfig='vim ~/.zshrc'
-alias epodpush='sh /Volumes/APPLE-HDD/Document/EfunProject/EfunScripts/release.sh'
-alias htcbg='cd /Users/efun/Documents/Personal/P-Project/iHTCBlog/'
-alias imgbg='cd /Users/efun/Documents/Personal/P-Project/iGallery/'
-
-
-# Android dev
-export PATH=${PATH}:/Users/efun/Library/Android/sdk/platform-tools
-export PATH=${PATH}:/Users/efun/Library/Android/sdk/tools
-
-# Flutter 
-export PATH=${PATH}://Volumes/APPLE-HDD/Document/Coding/Flutter/flutter/bin
+alias cls='clear'
+alias htcbg='cd /Users/HTC/Documents/Personal/P-Project/iHTCBlog/'
+alias htcmind='cd /Users/HTC/Documents/Personal/P-Project/OneMindMap/'
+alias htcnote='cd /Users/HTC/Documents/Personal/P-Project/NotesEveryDay/'
+alias imgbk='cd /Users/HTC/Documents/Personal/P-Project/iGallery/'
+alias mkipa='sh /Users/HTC/Documents/Personal/P-Project/iShell/Shell/make_ipa_file.sh'
 
 # Git
 alias gam="git add .; git commit -m "
@@ -127,7 +120,6 @@ function glazy() {
     git commit -a -m "$1"
     git push
 }
-
 
 alias gs="git status"
 alias gaa="git add ."
@@ -143,5 +135,19 @@ alias gll="git log --graph --all --format=format:'%C(bold blue)%h %C(bold green)
 export MonkeyDevPath=/opt/MonkeyDev
 export MonkeyDevDeviceIP=
 export PATH=/opt/MonkeyDev/bin:$PATH
+
 # JAVA
 export JAVA_HOME=$(/usr/libexec/java_home)
+
+# Android dev
+export PATH=${PATH}:/Users/HTC/Library/Android/sdk/platform-tools
+export PATH=${PATH}:/Users/HTC/Library/Android/sdk/tools
+
+# Flutter 
+export PATH=${PATH}:/Users/HTC/Documents/Programing/Flutter/flutter/bin
+
+
+
+
+
+

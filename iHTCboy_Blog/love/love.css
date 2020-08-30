@@ -1,0 +1,16 @@
+body{margin:0;padding:0;background:#fff;font-size:14px;font-family:'微软雅黑','宋体',sans-serif;color:#231F20;overflow:auto}
+@font-face {font-family:digit;src:url('digital-7_mono.ttf') format("truetype");}
+#main{width:100%; height: 450px;}
+#clock-box {position:absolute;left:110px;top:150px;font-size:28px;display:none;color:#7b7b7e;}
+#clock-box .name{font-size:36px;color:#c930c7;}
+#clock{margin-left:10px;margin-top:80px;}
+#clock .digit {font-family:"digit";font-size:64px;color:rgba(249, 0, 0, 0.65);}
+
+/* mobile device */
+@media screen and (max-width: 768px) {
+	#main{width:100%; height: 250px;}
+	#clock-box {position:absolute;left:35px;top:90px;font-size:18px;display:none;color:#7b7b7e;}
+	#clock-box .name{font-size:30px;color:#c930c7;}
+	#clock{margin-left:0px;margin-top:60px;}
+	#clock .digit {font-family:"digit";font-size:34px;color:rgba(249, 0, 0, 0.65);}
+}

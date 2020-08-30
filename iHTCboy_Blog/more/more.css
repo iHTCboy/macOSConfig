@@ -145,6 +145,10 @@
 
 
 /* ====== more ===== */
+.disabled {
+    pointer-events: none;
+    cursor: default;
+}
 
 .track-rcol {
     width: 100%;
