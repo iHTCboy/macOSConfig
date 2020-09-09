@@ -131,6 +131,10 @@ alias gl="git log --graph --all --format=format:'%C(bold blue)%h %C(bold green)(
 alias gll="git log --graph --all --format=format:'%C(bold blue)%h %C(bold green)(%cr) %C(bold cyan)%cD %C(bold yellow)%d%n''        %C(bold white)%cn:%C(reset) %C(white)%s%C(reset)' --abbrev-commit && echo '\033[2A'"
 
 
+alias venv='virtualenv --python=python3 venv'
+alias actvenv='source venv/bin/activate'
+
+
 # iOS MonkeyDev
 export MonkeyDevPath=/opt/MonkeyDev
 export MonkeyDevDeviceIP=
