@@ -109,7 +109,7 @@ alias cls='clear'
 alias htcbg='cd /Users/HTC/Documents/Personal/P-Project/iHTCBlog/'
 alias htcmind='cd /Users/HTC/Documents/Personal/P-Project/OneMindMap/'
 alias htcnote='cd /Users/HTC/Documents/Personal/P-Project/NotesEveryDay/'
-alias imgbk='cd /Users/HTC/Documents/Personal/P-Project/iGallery/'
+alias htcimg='cd /Users/HTC/Documents/Personal/P-Project/iGallery/'
 alias mkipa='sh /Users/HTC/Documents/Personal/P-Project/iShell/Shell/make_ipa_file.sh'
 
 # Git

@@ -1,0 +1,69 @@
+---
+layout: post
+slug: "m3u8"
+title: "m3u8 链接免费在线播放"
+noDate: "true"
+comments: "false"
+reward: false
+open_in_new: false
+---
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/dplayer@1.26.0/dist/DPlayer.min.js" charset="utf-8"></script>
+<div id="dplayer"></div>
+<br>
+<form action="./?url=" method="get" target="" id="playform" align="center">
+	<div class="input" align="left" style="margin: 15px;">
+		<label for="url">输入M3U8视频链接：</label>
+		<br>
+		<div class="sinput" style="width:100%;">
+			<div><span><input name="url" id="url" value="" style="width:100%;"></span></div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<div class="button">
+		<input type="submit" class="btn1" value="播放" style="width: 15%;">&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="reset" class="btn2" value="重填" style="width: 15%;">
+	</div>
+	<br>
+	<div class="input" align="right" style="margin: 15px;">
+		<input type="checkbox" id="chgAction" onclick="clickBox()">&nbsp;vip
+	</div>
+</form>
+<script>
+	let urlParams = new URLSearchParams(window.location.search);
+	let url = decodeURIComponent(urlParams.get('url'));
+	function play(url) {
+		if(!url || url == 'null') { return }
+		var dp = new DPlayer({
+			element: document.getElementById('dplayer'),
+			autoplay: true,
+			theme: '#0088cc',
+			playbackSpeed: [2.5, 3, 3.5, 4, 5, 0.1, 0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2],
+			video: {
+				url: url
+			}
+		});
+		dp.play();
+		document.getElementById('url').value = url;
+	};
+	play(url);
+
+	// vip
+	function clickBox() {
+		var checkBox = document.getElementById("chgAction");
+		chgAction((checkBox.checked == true) ? "vip" : "m3u8");
+	};
+	  
+	function chgAction(action_name) {
+		console.log('sdad');
+		var frm = document.getElementById('playform') || null;
+		let action = action_name == "m3u8" ? "./?url=" : "https://api.bbbbbb.me/?url=";
+		let target = action_name == "m3u8" ? "" : "_blank";
+		if(frm) {
+			frm.action = action;
+			frm.target = target;
+		}
+	};
+</script>

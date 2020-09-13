@@ -34,7 +34,6 @@ reward: true
 
 如果是这样写：
 
-
 ```python
     if request.method == 'POST':
         array = request.POST['array']
@@ -127,7 +126,19 @@ request.POST：
 ```
 数组和字典的全部值作为value，并且是string类型，显示不符合要求，并且导致处理复杂起来。
 
-- 方法三
+#### **20200906 更新**
+其实这个方法是最好的，数组和字典的全部值作为value，并且是string类型，其实是json字符串，所以直接还原就可以：
+
+
+```python
+ array = request.POST['array']
+ dict = request.POST['dict']
+ array_list = json.loads(array)
+ dict_list = json.loads(dict)
+```
+
+
+- ~~方法三~~
 其实，我们知道后端为了多个相同key存在，所以才这样处理，那么我们可以这样考虑，让数据和字典不在是数组和字典，后端在还原不就可以啦！
 
 ```js
@@ -155,7 +166,9 @@ request.POST：
 
 ![20180905-request.POST-irregular.png](https://github.com/iHTCboy/iGallery/raw/master/BlogImages/2018/09/20180905-request.POST-irregular.png)
 
-这样拿也许不是好办法，但是当你数组或字典数据非常多时，也就这样啦，当然，也可以json字符串后加密，这样后端也不能解析，如果需要，大家也可以这样做啊~
+~~这样拿也许不是好办法，但是当你数组或字典数据非常多时，也就这样啦，当然，也可以json字符串后加密，这样后端也不能解析，如果需要，大家也可以这样做啊~~~
+
+**正确答案：方法二是正解，json字符串参数，在 python 端反序列化就好。**
 
 ### 总结
 在处理这些数据时，可能是为了方便而方便，有时候只有清楚知道原因，才能更好的处理，上面的方法确实不是`好方法`，有时候还是按规则来处理更好，一个人开发还好，如果是多人，那将来可能会留下坑啊。
