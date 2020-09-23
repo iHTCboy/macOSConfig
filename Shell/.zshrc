@@ -130,9 +130,10 @@ alias gps="git push"
 alias gl="git log --graph --all --format=format:'%C(bold blue)%h %C(bold green)(%cr) %C(bold white)%cn: %C(bold yellow)%d%C(reset) %C(white)%s%C(reset)' --abbrev-commit --date=relative && echo '\033[2A'"
 alias gll="git log --graph --all --format=format:'%C(bold blue)%h %C(bold green)(%cr) %C(bold cyan)%cD %C(bold yellow)%d%n''        %C(bold white)%cn:%C(reset) %C(white)%s%C(reset)' --abbrev-commit && echo '\033[2A'"
 
-
+# Python
 alias venv='virtualenv --python=python3 venv'
 alias actvenv='source venv/bin/activate'
+alias pireq='pip install -r requirements.txt'
 
 
 # iOS MonkeyDev
