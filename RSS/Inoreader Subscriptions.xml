@@ -7,9 +7,24 @@
     <outline text="AI" title="AI">
       <outline text="Buracag的博客" title="Buracag的博客" type="rss" xmlUrl="https://buracagyang.github.io/atom.xml" htmlUrl="https://buracagyang.github.io/"/>
     </outline>
+    <outline text="VR" title="VR">
+      <outline text="Road to VR" title="Road to VR" type="rss" xmlUrl="https://www.roadtovr.com/feed/" htmlUrl="https://www.roadtovr.com/"/>
+      <outline text="AR/VR – VentureBeat" title="AR/VR – VentureBeat" type="rss" xmlUrl="https://venturebeat.com/category/arvr/feed/" htmlUrl="https://venturebeat.com/"/>
+      <outline text="Oculus Blog" title="Oculus Blog" type="rss" xmlUrl="https://www.oculus.com/blog/rss/" htmlUrl="https://www.oculus.com/blog/"/>
+      <outline text="Virtual Reality Times" title="Virtual Reality Times" type="rss" xmlUrl="http://virtualrealitytimes.com/feed/" htmlUrl="http://virtualrealitytimes.com/"/>
+      <outline text="VRFocus" title="VRFocus" type="rss" xmlUrl="https://www.vrfocus.com/feed/" htmlUrl="https://www.vrfocus.com"/>
+      <outline text="Next Reality" title="Next Reality" type="rss" xmlUrl="https://next.reality.news/rss.xml" htmlUrl="https://next.reality.news/"/>
+      <outline text="VRScout" title="VRScout" type="rss" xmlUrl="https://vrscout.com/feed/" htmlUrl="https://vrscout.com/"/>
+      <outline text="UploadVR" title="UploadVR" type="rss" xmlUrl="https://uploadvr.com/feed/" htmlUrl="https://uploadvr.com/"/>
+      <outline text="Virtual Reality &amp; Augmented Reality Trend News &amp; Reviews - Virtual Reality Reporter" title="Virtual Reality &amp; Augmented Reality Trend News &amp; Reviews - Virtual Reality Reporter" type="rss" xmlUrl="https://virtualrealityreporter.com/feed/" htmlUrl="https://virtualrealityreporter.com/"/>
+      <outline text="Virtual Reality–Digital Trends" title="Virtual Reality–Digital Trends" type="rss" xmlUrl="https://www.digitaltrends.com/virtual-reality/feed/" htmlUrl="https://www.digitaltrends.com/"/>
+      <outline text="Virtual Reality News -- ScienceDaily" title="Virtual Reality News -- ScienceDaily" type="rss" xmlUrl="http://www.sciencedaily.com/rss/computers_math/virtual_reality.xml" htmlUrl="http://www.sciencedaily.com/news/computers_math/virtual_reality/"/>
+      <outline text="Leap Motion Blog" title="Leap Motion Blog" type="rss" xmlUrl="http://blog.leapmotion.com/feed/" htmlUrl="http://blog.leapmotion.com/"/>
+    </outline>
     <outline text="Developer News" title="Developer News">
-      <outline text="新闻 - Apple Developer" title="新闻 - Apple Developer" type="rss" xmlUrl="https://developer.apple.com/cn/news/rss/news.rss" htmlUrl="https://developer.apple.com/cn/news/"/>
+      <outline text="Apple Inc. Press Releases" title="Apple Inc. Press Releases" type="rss" xmlUrl="http://www.apple.com/pr/feeds/pr.rss" htmlUrl="http://www.apple.com/pr/"/>
       <outline text="Releases - Apple Developer" title="Releases - Apple Developer" type="rss" xmlUrl="https://developer.apple.com/news/releases/rss/releases.rss" htmlUrl="https://developer.apple.com/news/"/>
+      <outline text="新闻 - Apple Developer" title="新闻 - Apple Developer" type="rss" xmlUrl="https://developer.apple.com/cn/news/rss/news.rss" htmlUrl="https://developer.apple.com/cn/news/"/>
     </outline>
     <outline text="IT" title="IT">
       <outline text="小众软件" title="小众软件" type="rss" xmlUrl="http://feeds.appinn.com/appinns/" htmlUrl="http://www.appinn.com/"/>
@@ -25,6 +40,9 @@
       <outline text="少数派" title="少数派" type="rss" xmlUrl="https://sspai.com/feed" htmlUrl="http://sspai.com/feed"/>
       <outline text="少数派" title="少数派" type="rss" xmlUrl="http://sspai.com/feed" htmlUrl="http://sspai.com/feed"/>
       <outline text="The Verge" title="The Verge" type="rss" xmlUrl="http://www.theverge.com/rss/index.xml" htmlUrl="http://www.theverge.com/"/>
+      <outline text="Unity Technologies Blog" title="Unity Technologies Blog" type="rss" xmlUrl="http://blogs.unity3d.com/feed/" htmlUrl="http://blogs.unity3d.com/"/>
+      <outline text="MacRumors: Mac News and Rumors - iOS Blog" title="MacRumors: Mac News and Rumors - iOS Blog" type="rss" xmlUrl="http://www.macrumors.com/iphone/iphone.xml" htmlUrl="http://www.macrumors.com/"/>
+      <outline text="The CommonsBlog" title="The CommonsBlog" type="rss" xmlUrl="http://commonsware.com/blog/feed.atom" htmlUrl="http://commonsware.com/blog/feed.atom"/>
       <outline text="学而时嘻之" title="学而时嘻之" type="rss" xmlUrl="https://www.geekonomics10000.com/feed" htmlUrl="https://www.geekonomics10000.com/"/>
       <outline text="罗磊的独立博客" title="罗磊的独立博客" type="rss" xmlUrl="https://luolei.org/feed/" htmlUrl="http://luolei.org/"/>
       <outline text="人人都是产品经理" title="人人都是产品经理" type="rss" xmlUrl="http://feedmaker.kindle4rss.com/feeds/woshipm.weixin.xml" htmlUrl="http://chuansong.me/account/woshipm"/>
@@ -36,10 +54,12 @@
       <outline text="老道消息" title="老道消息" type="rss" xmlUrl="http://feedmaker.kindle4rss.com/feeds/laodaoxx.weixin.xml" htmlUrl="http://www.iwgc.cn/list/5973"/>
     </outline>
     <outline text="Test" title="Test">
-      <outline text="DebugTalk" title="DebugTalk" type="rss" xmlUrl="http://debugtalk.com/atom.xml" htmlUrl="http://debugtalk.com/"/>
+      <outline text="DebugTalk" title="DebugTalk" type="rss" xmlUrl="https://debugtalk.com/atom.xml" htmlUrl="http://debugtalk.com/"/>
+      <outline text="Quality Coding" title="Quality Coding" type="rss" xmlUrl="https://qualitycoding.org/feed/" htmlUrl="https://qualitycoding.org/"/>
     </outline>
     <outline text="Swift" title="Swift">
       <outline text="SwiftGG" title="SwiftGG" type="rss" xmlUrl="http://swift.gg/atom.xml" htmlUrl="http://swiftggteam.github.io/"/>
+      <outline text="Swift.org" title="Swift.org" type="rss" xmlUrl="https://swift.org/atom.xml" htmlUrl="https://swift.org/atom.xml"/>
       <outline text="Swifter" title="Swifter" type="rss" xmlUrl="http://swifter.tips/feed.xml" htmlUrl="http://swifter.tips/"/>
       <outline text="SwiftGG" title="SwiftGG" type="rss" xmlUrl="https://swift.gg/atom.xml" htmlUrl="https://swift.gg/"/>
       <outline text="Swifter" title="Swifter" type="rss" xmlUrl="http://swifter.tips/rss/" htmlUrl="http://swifter.tips/"/>
@@ -49,6 +69,9 @@
       <outline text="Producter Tips" title="Producter Tips" type="rss" xmlUrl="http://tips.producter.io/rss/" htmlUrl="http://tips.producter.io/"/>
       <outline text="Swift Blog" title="Swift Blog" type="rss" xmlUrl="https://www.avanderlee.com/feed/" htmlUrl="https://www.avanderlee.com/"/>
       <outline text="SwiftCafe" title="SwiftCafe" type="rss" xmlUrl="https://swiftcafe.io/rss.xml" htmlUrl="https://swiftcafe.io/"/>
+    </outline>
+    <outline text="Design" title="Design">
+      <outline text="向远公园 | Step Park" title="向远公园 | Step Park" type="rss" xmlUrl="https://steppark.net/atom.xml" htmlUrl="https://steppark.net/"/>
     </outline>
     <outline text="Python" title="Python">
       <outline text="Do Great Things - 叶玎玎" title="Do Great Things - 叶玎玎" type="rss" xmlUrl="http://yedingding.com/feed.xml" htmlUrl="http://yedingding.com/"/>
@@ -77,7 +100,10 @@
       <outline text="NSHipster中文" title="NSHipster中文" type="rss" xmlUrl="https://nshipster.cn/feed.xml" htmlUrl="http://nshipster.cn/"/>
       <outline text="objc.io" title="objc.io" type="rss" xmlUrl="http://www.objc.io/feed.xml" htmlUrl="http://www.objc.io/"/>
       <outline text="iOS Dev Weekly" title="iOS Dev Weekly" type="rss" xmlUrl="http://iosdevweekly.com/issues.rss" htmlUrl="http://iosdevweekly.com/issues"/>
+      <outline text="老司机iOS周报" title="老司机iOS周报" type="rss" xmlUrl="https://github.com/SwiftOldDriver/iOS-Weekly/releases.atom" htmlUrl="https://github.com/SwiftOldDriver/iOS-Weekly/releases"/>
       <outline text="objc中国" title="objc中国" type="rss" xmlUrl="http://objccn.io/rss/" htmlUrl="http://objccn.io/"/>
+      <outline text="Swift.org" title="Swift.org" type="rss" xmlUrl="https://swift.org/atom.xml" htmlUrl="https://swift.org/atom.xml"/>
+      <outline text="iOS Goodies" title="iOS Goodies" type="rss" xmlUrl="http://ios-goodies.com/rss" htmlUrl="http://ios-goodies.com/"/>
       <outline text="[iOS developer:tips];" title="[iOS developer:tips];" type="rss" xmlUrl="http://iosdevelopertips.com/feed" htmlUrl="http://iosdevelopertips.com/"/>
       <outline text="NSHipster" title="NSHipster" type="rss" xmlUrl="https://nshipster.com/feed.xml" htmlUrl="http://nshipster.com/"/>
       <outline text="Bugly技术团队博客" title="Bugly技术团队博客" type="rss" xmlUrl="https://buglydevteam.github.io/atom.xml" htmlUrl="https://buglydevteam.github.io/"/>
@@ -111,7 +137,6 @@
       <outline text="MacStories" title="MacStories" type="rss" xmlUrl="http://www.macstories.net/feed/" htmlUrl="http://www.macstories.net/"/>
       <outline text="Cult of Mac" title="Cult of Mac" type="rss" xmlUrl="http://cultofmac.com.feedsportal.com/c/33797/f/606249/index.rss" htmlUrl="http://www.cultofmac.com/"/>
       <outline text="AppleInsider - Frontpage News" title="AppleInsider - Frontpage News" type="rss" xmlUrl="http://appleinsider.com.feedsportal.com/c/33975/f/616168/index.rss" htmlUrl="http://appleinsider.com/"/>
-      <outline text="Apple Inc. Press Releases" title="Apple Inc. Press Releases" type="rss" xmlUrl="http://www.apple.com/pr/feeds/pr.rss" htmlUrl="http://www.apple.com/pr/"/>
       <outline text="TechCrunch" title="TechCrunch" type="rss" xmlUrl="http://feeds.feedburner.com/TechCrunch/" htmlUrl="http://techcrunch.com/"/>
       <outline text="iphone-ticker.de" title="iphone-ticker.de" type="rss" xmlUrl="http://rss.feedsportal.com/c/32832/f/527546/index.rss" htmlUrl="http://www.iphone-ticker.de/"/>
       <outline text="TidBITS: Apple News for the Rest of Us" title="TidBITS: Apple News for the Rest of Us" type="rss" xmlUrl="http://tidbits.com/feeds/tidbits_blurb.rss" htmlUrl="http://tidbits.com/"/>
@@ -120,7 +145,9 @@
       <outline text="Hack Mac" title="Hack Mac" type="rss" xmlUrl="http://www.hackmac.org/feed/" htmlUrl="http://www.hackmac.org/"/>
       <outline text="Flo's Weblog | Apple News and more..." title="Flo's Weblog | Apple News and more..." type="rss" xmlUrl="http://www.schimanke.com/index.php?/feeds/index.rss" htmlUrl="http://www.schimanke.com/"/>
       <outline text="MarCoach" title="MarCoach" type="rss" xmlUrl="http://www.marcoach.nl/feed/" htmlUrl="http://www.marcoach.nl/"/>
+      <outline text="MacRumors: Mac News and Rumors - All Stories" title="MacRumors: Mac News and Rumors - All Stories" type="rss" xmlUrl="http://feeds.macrumors.com/MacRumors-All" htmlUrl="http://www.macrumors.com/"/>
       <outline text="新闻 - Apple Developer" title="新闻 - Apple Developer" type="rss" xmlUrl="https://developer.apple.com/cn/news/rss/news.rss" htmlUrl="https://developer.apple.com/cn/news/"/>
+      <outline text="9to5Mac" title="9to5Mac" type="rss" xmlUrl="https://9to5mac.com/feed/" htmlUrl="https://9to5mac.com/"/>
     </outline>
     <outline text="iOS Developer" title="iOS Developer">
       <outline text="Casa Taloyum" title="Casa Taloyum" type="rss" xmlUrl="http://casatwy.com/feeds/all.atom.xml" htmlUrl="http://casatwy.com/"/>
@@ -260,6 +287,10 @@
       <outline text="Jason" title="Jason" type="rss" xmlUrl="https://atjason.com/atom.xml" htmlUrl="http://atjason.com/"/>
       <outline text="敬维" title="敬维" type="rss" xmlUrl="https://jingwei.link/rss.xml" htmlUrl="https://jingwei.link//"/>
       <outline text="Why's Blog" title="Why's Blog" type="rss" xmlUrl="https://blog.callmewhy.com/atom.xml" htmlUrl="http://blog.callmewhy.com/"/>
+      <outline text="nswebfrog" title="nswebfrog" type="rss" xmlUrl="https://nswebfrog.com/index.xml" htmlUrl="https://nswebfrog.com/"/>
+      <outline text="向远公园 | Step Park" title="向远公园 | Step Park" type="rss" xmlUrl="https://steppark.net/atom.xml" htmlUrl="https://steppark.net/"/>
+      <outline text="苹果核" title="苹果核" type="rss" xmlUrl="http://pingguohe.net/feed.xml" htmlUrl="http://pingguohe.net/"/>
+      <outline text="酷酷的哀殿" title="酷酷的哀殿" type="rss" xmlUrl="https://ai-chan.top/feed/" htmlUrl="https://ai-chan.top/"/>
       <outline text="萧宸宇" title="萧宸宇" type="rss" xmlUrl="http://www.iiiyu.com/atom.xml" htmlUrl="http://iiiyu.com/"/>
       <outline text="Dely的博客" title="Dely的博客" type="rss" xmlUrl="http://dely.vip/atom.xml" htmlUrl="http://yoursite.com/"/>
       <outline text="罗朝辉（飘飘白云）" title="罗朝辉（飘飘白云）" type="rss" xmlUrl="http://blog.csdn.net/kesalin/rss/list" htmlUrl="http://blog.csdn.net/kesalin"/>
@@ -319,6 +350,7 @@
       <outline text="w3cplus" title="w3cplus" type="rss" xmlUrl="https://www.w3cplus.com/rss.xml" htmlUrl="https://www.w3cplus.com/"/>
       <outline text="程序猿小卡的博客" title="程序猿小卡的博客" type="rss" xmlUrl="https://www.chyingp.com/feed/" htmlUrl="https://www.chyingp.com/"/>
       <outline text="HK Talk" title="HK Talk" type="rss" xmlUrl="https://blog.hhking.cn/atom.xml" htmlUrl="https://blog.hhking.cn/"/>
+      <outline text="A List Apart: The Full Feed" title="A List Apart: The Full Feed" type="rss" xmlUrl="https://alistapart.com/main/feed/" htmlUrl="http://alistapart.com/"/>
       <outline text="Sivan's Blog" title="Sivan's Blog" type="rss" xmlUrl="http://lightcss.com/feed/" htmlUrl="http://lightcss.com/"/>
       <outline text="大搜车前端团队博客" title="大搜车前端团队博客" type="rss" xmlUrl="http://f2e.souche.com/blog/rss/" htmlUrl="http://f2e.souche.com/blog/"/>
       <outline text="贾鹏辉的技术博客" title="贾鹏辉的技术博客" type="rss" xmlUrl="http://www.devio.org/feed.xml" htmlUrl="http://localhost:4000/"/>
@@ -331,6 +363,8 @@
     <outline text="Security Develop" title="Security Develop">
       <outline text="姜晔的技术专栏" title="姜晔的技术专栏" type="rss" xmlUrl="https://blog.csdn.net/ioio_jy/rss/list" htmlUrl="https://blog.csdn.net/ioio_jy"/>
       <outline text="mrh的学习分享" title="mrh的学习分享" type="rss" xmlUrl="http://turingh.github.io/atom.xml" htmlUrl="http://yoursite.com/"/>
+      <outline text="博客园_lulianqi15" title="博客园_lulianqi15" type="rss" xmlUrl="https://www.cnblogs.com/lulianqi/rss" htmlUrl="https://www.cnblogs.com/lulianqi/rss"/>
+      <outline text="Hacker News" title="Hacker News" type="rss" xmlUrl="https://news.ycombinator.com/rss" htmlUrl="https://news.ycombinator.com/"/>
       <outline text="AloneMonkey" title="AloneMonkey" type="rss" xmlUrl="http://www.alonemonkey.com/atom.xml" htmlUrl="http://www.alonemonkey.com/"/>
       <outline text="everettjf" title="everettjf" type="rss" xmlUrl="http://everettjf.com/feed.xml" htmlUrl="http://everettjf.com/"/>
       <outline text="bazad.github.io" title="bazad.github.io" type="rss" xmlUrl="https://bazad.github.io/feed.xml" htmlUrl="https://bazad.github.io/bazad.github.io/"/>
@@ -413,6 +447,8 @@
       <outline text="Diggzhang 掘客张" title="Diggzhang 掘客张" type="rss" xmlUrl="https://diggzhang.github.io/feed.xml" htmlUrl="https://diggzhang.github.io/"/>
       <outline text="Coding and Living" title="Coding and Living" type="rss" xmlUrl="http://www.woaitqs.cc/feed.xml" htmlUrl="http://www.woaitqs.cc/feed.xml"/>
       <outline text="Android 开发技术周报" title="Android 开发技术周报" type="rss" xmlUrl="https://androidweekly.io/rss/" htmlUrl="https://androidweekly.io/"/>
+      <outline text="Styling Android" title="Styling Android" type="rss" xmlUrl="http://blog.stylingandroid.com/feed" htmlUrl="http://blog.stylingandroid.com/"/>
+      <outline text="AndroidHive | Tutorials, Games, Apps, Tips" title="AndroidHive | Tutorials, Games, Apps, Tips" type="rss" xmlUrl="http://www.androidhive.info/feed/" htmlUrl="http://www.androidhive.info/"/>
       <outline text="Aaron blog" title="Aaron blog" type="rss" xmlUrl="http://www.wxtlife.com/atom.xml" htmlUrl="http://wxtlife.com/"/>
       <outline text="吴小龙同學" title="吴小龙同學" type="rss" xmlUrl="http://wuxiaolong.me/atom.xml" htmlUrl="http://wuxiaolong.me/"/>
       <outline text="Google Developers Blog" title="Google Developers Blog" type="rss" xmlUrl="http://feeds.feedburner.com/blogspot/Dcni" htmlUrl="http://googledevelopers.blogspot.com/"/>
@@ -432,7 +468,9 @@
       <outline text="全栈养成计划" title="全栈养成计划" type="rss" xmlUrl="http://fullstack.blog/atom.xml" htmlUrl="http://fullstack.blog/"/>
       <outline text="四火的唠叨" title="四火的唠叨" type="rss" xmlUrl="http://www.raychase.net/feed" htmlUrl="http://www.raychase.net/"/>
       <outline text="HARDLIVER" title="HARDLIVER" type="rss" xmlUrl="https://hardliver.blogspot.com/feeds/posts/default" htmlUrl="https://hardliver.blogspot.com/"/>
+      <outline text="博客园_lulianqi15" title="博客园_lulianqi15" type="rss" xmlUrl="https://www.cnblogs.com/lulianqi/rss" htmlUrl="https://www.cnblogs.com/lulianqi/rss"/>
       <outline text="栖迟于一丘" title="栖迟于一丘" type="rss" xmlUrl="https://www.hongweipeng.com/index.php/feed/" htmlUrl="https://www.hongweipeng.com/"/>
+      <outline text="路个的的奇思怪想" title="路个的的奇思怪想" type="rss" xmlUrl="http://lugede.cn/feed" htmlUrl="http://lugede.cn/"/>
       <outline text="程序师" title="程序师" type="rss" xmlUrl="http://www.techug.com/feed" htmlUrl="http://www.techug.com/"/>
       <outline text="张亚楠博客" title="张亚楠博客" type="rss" xmlUrl="https://www.zhidaow.com/feed" htmlUrl="http://www.zhidaow.com/"/>
       <outline text="在软件开发的漫漫长路上且行且吟" title="在软件开发的漫漫长路上且行且吟" type="rss" xmlUrl="http://blog.csdn.net/foruok/rss/list" htmlUrl="http://blog.csdn.net/foruok"/>
