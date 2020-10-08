@@ -58,7 +58,7 @@ CRONJOBS = [
 示例：
 ```
 CRONJOBS = [
-    ('*/1 * * * *', 'appname.test_crontab.test','>>/home/python/test_crontab.log')
+    ('*/1 * * * *', 'appname.test_crontab.test','>> /home/python/test_crontab.log')
 
 ]
 ```
@@ -134,6 +134,10 @@ python manage.py crontab remove
 ```
 
 ### 一些问题
+输出到日志的默认是不支持日志的，所以可以 settings.py 中设置中文支持:
+```python
+CRONTAB_COMMAND_PREFIX = ‘LANG_ALL=zh_cn.UTF-8’ 
+```
 
 如果配置成这样：
 
@@ -141,8 +145,8 @@ python manage.py crontab remove
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 CRONJOBS = [
-('0 7 * * 1-5', 'api.cron.email_to_late_docs', '>> {}'.format(BASE_DIR + '/logs/log_{:%d_%m_%Y}.log'.format(time.now()))),
-('0 7 * * 1-5', 'api.cron.email_ten_days_before', '>> {}'.format(BASE_DIR + 'logs/log_{:%d_%m_%Y}.log'.format(time.now())))
+    ('0 7 * * 1-5', 'api.cron.email_to_late_docs', '>> {}'.format(BASE_DIR + '/logs/log_{:%d_%m_%Y}.log'.format(time.now()))),
+    ('0 7 * * 1-5', 'api.cron.email_ten_days_before', '>> {}'.format(BASE_DIR + 'logs/log_{:%d_%m_%Y}.log'.format(time.now())))
 ]
 ```
 
@@ -154,10 +158,41 @@ CRONJOBS = [
 
 针对这种情况，解决方法是，日志文件名称固定，然后创建一个任务，用来每天把日志文件重命名（move）成想要的格式名称，这样就可以啦！
 
+#### 2020-09-13 更新
+
+由于最新的 macOS 10.15 后系统对访问文件夹目录权限做了限制，默认是不允许读写文件。所以导致了一些bug。所以，执行定时任务时，如果出错，默认是不会写到日志文件里的，那么排查错误呢？
+
+在 settings.py 中增加`CRONTAB_COMMAND_SUFFIX`配置：
+
+```python
+CRONTAB_COMMAND_SUFFIX = ‘2>&1’
+```
+
+增加了这个配置，那么错误的日志也会直接输出到配置的日志文件中。
+
+当然，也可以在 settings.py 中的`CRONJOBS`配置中指定错误日志输出的文件目录，例如：
+
+```python
+CRONJOBS = [
+    ('*/1 * * * *', 'appname.test_crontab.test','>> /home/python/test_crontab.log 2>> /home/python/error_crontab.log')
+
+]
+```
+
+另外，可以通过下面2个命令查看 `crontab` 具体的任务：
+```
+crontab -l
+crontab -e
+```
+
+输出错误后，就可以根据错误的问题，找到原因后解决了。
+
+
 
 ### 总结
 
 通过这个需求，可以看到很多知识点其实是串联起来的，从`python`到`django`到`Linux`的`crontab`，所以，学习无止境，知识学习只会越来越多，如果你提前掌握了某些知识，那么学习新（旧）知识的成本就会降低很多，或者理解成本，比如你学习了 `Linux`， 了解过 `cron` ，那么对于学习这个 `django` 的定时任务会轻松很多！永远不要认为有些知识你永远用不上，所以现在就不学，可能现在的永远距离已经很短啦！加油~
+
 
 ### 参考
 
@@ -171,6 +206,12 @@ CRONJOBS = [
 - [django-crontab is missing job hash after one day · Issue #76 · kraiz/django-crontab](https://github.com/kraiz/django-crontab/issues/76)
 - [Cron Format - Wikipedia](http://en.wikipedia.org/wiki/Cron#Format)
 - [crontab.guru](https://crontab.guru/examples.html)
+- [python - 的Django的crontab不执行测试功能](https://stackoverrun.com/cn/q/10635382)
+- [python - PermissionError: Errno 1 Operation not permitted: ‘/Users/<local_path>/venv/pyvenv.cfg’ - Stack Overflow](https://stackoverflow.com/questions/62876343/permissionerror-errno-1-operation-not-permitted-users-local-path-venv-py)
+- [python - Django crontab not executing test function - Stack Overflow](https://stackoverflow.com/questions/38589830/django-crontab-not-executing-test-function)
+- [解决mac osx下pip安装ipython权限的问题 – 峰云就她了](http://xiaorui.cc/archives/3061)
+- [如何在Django中开启一个定时任务_qq_15256443的博客-CSDN博客](https://blog.csdn.net/qq_15256443/article/details/103668804)
+
 
 <br>
 
