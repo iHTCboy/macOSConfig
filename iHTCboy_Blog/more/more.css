@@ -256,7 +256,12 @@
     border-radius: 10px;
 }
 
-.production-picture #bj1 {
+.production-picture .bj0 {
+    background: url(image/iPomodoro.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.production-picture .bj1 {
     background: url(image/iCoder.jpg) no-repeat center;
     background-size: cover;
 }

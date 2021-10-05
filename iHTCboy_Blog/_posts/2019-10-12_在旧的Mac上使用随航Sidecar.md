@@ -121,6 +121,7 @@ iPad Air (3rd generation)
 - [Sidecar not working in iPadOS and macOS? How to fix Sidecar problems - AppleToolBox](https://appletoolbox.com/sidecar-not-working-in-ipados-and-macos-how-to-fix-sidecar-problems/)
 - [Apple's Sidecar feature only works on newer Macs](https://www.engadget.com/2019/10/08/apple-macos-sidecar-newer-macs/)
 - [Mac开启关闭SIP（系统完整性保护） - 简书](https://www.jianshu.com/p/fe78d2036192)
+- [在 macOS 10.15.4 上解锁 Sidecar 需要进行额外步骤 - 知乎](https://zhuanlan.zhihu.com/p/116475208)
 
 <br>
 
