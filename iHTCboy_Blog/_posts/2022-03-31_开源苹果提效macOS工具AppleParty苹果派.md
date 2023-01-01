@@ -14,6 +14,8 @@ reward: true
 
 <!--more-->
 
+![AppleParty-00](https://ihtcboy.com/images/2022-AppleParty-00.png)
+
 ## 一、前言
 
 大家好，很高兴告诉大家一件重要的事情，我们发起了一个开源项目 —— [AppleParty（苹果派）](https://github.com/37iOS/AppleParty)（苹果派）。这是我们团队在上一个 [开源的 App Store](https://juejin.cn/post/7051512478630412301) 后又一个尝试。AppleParty 这个项目是我们 37手游 iOS 团队内部孵化的一个产品，希望这个项目能作为一个引子，通过开源与大家分享成果，一起提高效率和拓展大家对未来的探索方向。
