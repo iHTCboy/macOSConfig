@@ -116,8 +116,8 @@
         var data = res.list[j].arr;
         var liTmpl = "";
         for (var i = 0, len = data.link.length; i < len; i++) {
-          var minSrc = 'https://raw.githubusercontent.com/iHTCboy/iGallery/master/Backup/Thumbnail/' + data.link[i];
-          var src = 'https://raw.githubusercontent.com/iHTCboy/iGallery/master/Backup/Origin/' + data.link[i];
+          var minSrc = 'https://ihtcboy.com/more/photos/Thumbnail/' + data.link[i];
+          var src = 'https://ihtcboy.com/more/photos/Origin/' + data.link[i];
           var size = data.size[i];
           var type = 'image';//data.type[i];
           var target = src;//+ (type === 'video' ? '.mp4' : '.jpg');
