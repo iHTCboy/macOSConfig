@@ -85,7 +85,7 @@ App 详细页面，把开发者最关心的参数显示在最前面。另外，�
 
 #### 2.5 其它
 
-为了方便开发者使用，App 列表长按时，会弹出操作列表，可以已经复制 App 的信息或者快速打开 App Store 产品页，尽可能的快捷获取内容！另外，还支持暗黑模式，依然精美绝伦！切换图标可以选择自己显示的图标等。
+为了方便开发者使用，App 列表长按时，会弹出操作列表，可以复制 App 的信息或者快速打开 App Store 产品页，尽可能的快捷获取内容！另外，还支持暗黑模式，依然精美绝伦！切换图标可以选择自己显示的图标等。
 
 ![iAppStore-08](https://ihtcboy.com/images/2022-iAppStore-08.jpg)
 
@@ -287,3 +287,5 @@ iAppStore 从构思到实现，花了半个月的时间，期间调研接口和�
 - [37iOS/iAppStore-SwiftUI - GitHub](https://github.com/37iOS/iAppStore-SwiftUI)
 - [ios - How do I use SFSafariViewController with SwiftUI? - Stack Overflow](https://stackoverflow.com/questions/56518029/how-do-i-use-sfsafariviewcontroller-with-swiftui)
 - [SF Symbols - Apple Developer](https://developer.apple.com/sf-symbols/)
+
+> 注：如若转载，请注明来源。

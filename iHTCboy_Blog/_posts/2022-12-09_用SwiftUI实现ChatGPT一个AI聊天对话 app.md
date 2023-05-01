@@ -319,3 +319,5 @@ Gravatar 的概念首先是在国外的独立 WordPress 博客中兴起的，当
 - [OpenAI Blog](https://openai.com/blog/)
 - [A-kirami/nonebot-plugin-chatgpt](https://github.com/A-kirami/nonebot-plugin-chatgpt)
 - [Image Requests - Globally](https://en.gravatar.com/site/implement/images/)
+
+> 注：如若转载，请注明来源。

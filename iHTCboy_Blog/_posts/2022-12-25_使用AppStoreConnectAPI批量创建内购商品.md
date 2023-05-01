@@ -42,7 +42,7 @@ Apple Developer Relations
 - in-app purchases, and subscriptions（内购商品，包括订阅类型）
 - app pricing（app定价）
 
-而 `Game Center` 和上传 `ipa` 文件等方式，目前还能上传，目前来看，是因为 App Store Connect API 还不支持！所以，希望明天 WWDC23 苹果能支持上传 ipa 文件，这样就更加方便~
+而 `Game Center` 和上传 `ipa` 文件等方式，目前还能上传，目前来看，是因为 App Store Connect API 还不支持！所以，希望明年 WWDC23 苹果能支持上传 ipa 文件，这样就更加方便~
 
 ### 二、App Store Connect API
 
@@ -421,7 +421,7 @@ App Store Connect API 可以根据官方文档就能大概了解，但是依然�
 
 ### 四、总结
 
-App Store Connect API 功能非常多，包括元数据的管理，构建版本的管理、TextFlight 管理、证书管理等等，Apple Party（苹果派）从日常使用场景最多的内购商品批量创建入手，未来依然有非常多的生效力效率提升，欢迎大家一起迭代和 PR 提交！
+App Store Connect API 功能非常多，包括元数据的管理，构建版本的管理、TestFlight 管理、证书管理等等，Apple Party（苹果派）从日常使用场景最多的内购商品批量创建入手，未来依然有非常多的生效力效率提升，欢迎大家一起迭代和 PR 提交！
 
 欢迎你一起体验和参考 [37iOS/AppleParty](https://github.com/37iOS/AppleParty)~
 
@@ -441,3 +441,5 @@ App Store Connect API 功能非常多，包括元数据的管理，构建版本�
 - [Create an In-App Purchase Review Screenshot | Apple Developer Documentation](https://developer.apple.com/documentation/appstoreconnectapi/create_an_in-app_purchase_review_screenshot)
 - [AvdLee/appstoreconnect-swift-sdk: The Swift SDK to work with the App Store Connect API from Apple.](https://github.com/AvdLee/appstoreconnect-swift-sdk)
 - [Releases · 37iOS/AppleParty](https://github.com/37iOS/AppleParty/releases)
+
+> 注：如若转载，请注明来源。

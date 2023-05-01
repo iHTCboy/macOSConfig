@@ -939,3 +939,5 @@ end
 * [Getting only decoded payload from JWT in python - Stack Overflow](https://stackoverflow.com/questions/59425161/getting-only-decoded-payload-from-jwt-in-python)
 * [Validate StoreKit2 in-app purchase jwsRepresentation in backend| Apple Developer Forums](https://developer.apple.com/forums/thread/691464)
 * [How do I convert a .cer certificate to .pem? - Server Fault](https://serverfault.com/questions/254627/how-do-i-convert-a-cer-certificate-to-pem)
+
+> 注：如若转载，请注明来源。

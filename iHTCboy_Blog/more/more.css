@@ -256,6 +256,21 @@
     border-radius: 10px;
 }
 
+.production-picture .iOSTeam1 {
+    background: url(image/iChatGPT.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.production-picture .iOSTeam2 {
+    background: url(image/iAppStore.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.production-picture .iOSTeam3 {
+    background: url(image/AppleParty.jpg) no-repeat center;
+    background-size: cover;
+}
+
 .production-picture .bj0 {
     background: url(image/iPomodoro.jpg) no-repeat center;
     background-size: cover;

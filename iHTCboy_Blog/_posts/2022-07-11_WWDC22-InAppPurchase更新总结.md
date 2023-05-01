@@ -835,3 +835,5 @@ App Store Connect API 增加了查询沙盒账号、清除沙盒内购历史记�
 - [自动续期订阅 - App Store - Apple Developer](https://developer.apple.com/cn/app-store/subscriptions/)
 - [阐明 App Store 改善流程的标准和新的限期延长 - Apple Developer](https://developer.apple.com/cn/news/?id=gi6npkmf)
 - [现已推出适用于订阅的自定优惠代码 - Apple Developer](https://developer.apple.com/cn/news/?id=9sjl5wuv)
+
+> 注：如若转载，请注明来源。

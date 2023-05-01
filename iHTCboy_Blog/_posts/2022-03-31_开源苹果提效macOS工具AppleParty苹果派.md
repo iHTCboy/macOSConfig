@@ -536,3 +536,5 @@ AppleParty 要解决的问题是开发者有很多 app 的情况下的管理，�
 - [下载销售和趋势报告 - Reporter 用户指南 3.1.6](https://help.apple.com/itc/appsreporterguide/#/apd68da36164)
 - [fastlane/spaceship · fastlane](https://github.com/fastlane/fastlane/tree/master/spaceship)
 - [Download Sales and Trends Reports | Apple Developer Documentation](https://developer.apple.com/documentation/appstoreconnectapi/download_sales_and_trends_reports)
+
+> 注：如若转载，请注明来源。

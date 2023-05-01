@@ -8,18 +8,17 @@ reward: true
 
 本文首发于 [趣谈 iOS Universal Link - 掘金](https://juejin.cn/post/7041091910626181157)，欢迎关注我们 [@37手游iOS技术运营团队](https://juejin.cn/user/1002387318511214) 。
 
-<!--more-->
-
 作者：iHTCboy
 
 > 本文对 iOS Universal Link（通用链接）的浅入浅出介绍，从产品的角度来了解其发展历程。
 > 
 > 1、了解 Universal Link 背后的故事
-> 
 > 2、学习 Universal Link 功能的使用
-> 
 > 3、总结 Universal Link 产品的思考
 
+<!--more-->
+
+![iOSUniversalLink-0.jpeg](https://ihtcboy.com/images/2021-iOSUniversalLink-0.jpeg)
 
 ### 一、前言
 
@@ -53,11 +52,11 @@ shoebox:// （Apple Pay）
 
 那么，另一个问题又来了，**为什么会出现 URL Scheme ？**
 
-![iOSUniversalLink-6.jpeg](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/30b4fb52b2894d2299007f3e4ad2892f~tplv-k3u1fbpfcp-watermark.image?)
+![iOSUniversalLink-6](https://ihtcboy.com/images/2021-iOSUniversalLink-6.jpeg)
 
 在当年 iPhoneOS 出来时，就已经是有沙盒机制，导致二个 App 之间无法读取对方的沙盒空间，无法直接通讯，所以，苹果提供了 `Apple URL Scheme Reference` 来解决自家的 app 无法交互的问题。
 
-举例来说，在 Safari 浏览器看到某个网页上的电话号码，能不能直接调起拨打电话？我们知道可以这样编码：
+举例来说，在 Safari 浏览器看到某个网页上的电话号码，能不能直接调起拨打电话？我们知道是可以的：
 
 ```html
 HTML link:
@@ -67,12 +66,12 @@ Native app URL string:
 tel:1-408-555-5555
 ```
 
-![iOSUniversalLink-7.jpeg](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7cf94fa957cd497c8c7af432c2c9b016~tplv-k3u1fbpfcp-watermark.image?)
+![iOSUniversalLink-7](https://ihtcboy.com/images/2021-iOSUniversalLink-7.jpeg)
 
 可以看苹果的文档看到，URL Schemes 是跟 iPhoneOS 开放给开发者，详细的苹果 URL Schemes 可以文档：[About Apple URL Schemes](https://developer.apple.com/library/archive/featuredarticles/iPhoneURLScheme_Reference/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007899-CH1-SW1)。
 
 
-![iOSUniversalLink-9.jpeg](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cca4940f040b4722bd7e3ec743113591~tplv-k3u1fbpfcp-watermark.image?)
+![iOSUniversalLink-9](https://ihtcboy.com/images/2021-iOSUniversalLink-9.jpeg)
 
 使用 URL Schemes 最多的 App 应该是效率工具类，因为它们有工作流的需求，所以它们把 URL Schemes 玩出了很多花样，包含 `callback-URL` 回调功能。
 
@@ -91,27 +90,26 @@ Universal Link 优点，主要有 4 个：
 4. 隐私性
 
 
-![iOSUniversalLink-13.jpeg](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/153642d338fd408ca03e29fe7ad562fb~tplv-k3u1fbpfcp-watermark.image?)
+![iOSUniversalLink-13](https://ihtcboy.com/images/2021-iOSUniversalLink-13.jpeg)
 
 **通用性**：一个 URL 对你的网站和 App 都通用，Universal Links 是标准的 URL 格式，而自定义 URL Scheme 可能理解为特殊 URL 方案，默认只有你的 App 能解析，浏览器无法解析。
 
-![iOSUniversalLink-15.jpeg](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2def6845ab4d486393cb2bc5d706d077~tplv-k3u1fbpfcp-watermark.image?)
-
+![iOSUniversalLink-15](https://ihtcboy.com/images/2021-iOSUniversalLink-15.jpeg)
 **灵活性**：即使未安装你的 App，Universal Links 也可以使用。未安装你的应用程序时，打开链接，Safari 中打开显示你网站的内容，是符合用户预期的体验，同时，网页可以显示跳转 AppStore 下载的引导，进一步的提升用户体验。
 
 
-![iOSUniversalLink-14.jpeg](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2b5fb1cca1ae49a48f09729021a2b02f~tplv-k3u1fbpfcp-watermark.image?)
+![iOSUniversalLink-14](https://ihtcboy.com/images/2021-iOSUniversalLink-14.jpeg)
 
 **安全性**：只有开发者自己的网络域名配置了 apple-app-site-association，才能调用对应的 App。而 URL Scheme 配置的 Scheme，任意的 App 都可以配置相同的 Scheme，无法保证开发者 App 的安全调用。另外，当用户安装你的 App 时，iOS 会检查你已上传到网络服务器的文件配置，以确保只有你的网站允许调用您的 App。
 
 
-![iOSUniversalLink-16.jpeg](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6864fb333af542b7bb6ec6e052e7b98f~tplv-k3u1fbpfcp-watermark.image?)
+![iOSUniversalLink-16](https://ihtcboy.com/images/2021-iOSUniversalLink-16.jpeg)
 
 **隐私性**：很久以前，大家都可以利用 Scheme 检查 App 是否安装，这样有什么作用呢？其实，当你知道用户都安装了什么应用后，可以分析用户的喜好或习惯，当然，目前。另一方面，很多 App 会冒充注册知名的 App scheme 从而拦截调合法 App 的 scheme 调起。
 
 > 注：iOS 9 开始苹果把 URL Schemes 改为白名单机制，也就是只有配置了白名单的 scheme 才可正常检查其他应用是否安装。同时，最多只能设置 50 个不同的 Schemes 白名单（超出 50 个的 schemes 调用 canOpenURL 返回 NO）。
 
-![iOSUniversalLink-17.jpeg](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/11c2c960915b4bde8c2796fd4990af23~tplv-k3u1fbpfcp-watermark.image?)
+![iOSUniversalLink-17](https://ihtcboy.com/images/2021-iOSUniversalLink-17.jpeg)
 
 另外，微信创建应用时，必须配置 Universal Link 链接，详细见文档：[微信开放平台发布新版本SDK，请开发者尽快更新](https://developers.weixin.qq.com/community/develop/doc/00062412e00e4878f8290f35457801)。从安全性和隐私性来说，微信是做的最好和最前卫，连海外 Facebook、Google 的 SDK 现在都还没有提出 Universal Link 的想法。
 
@@ -126,13 +124,13 @@ Universal Link 优点，主要有 4 个：
 
 关于 Universal Link 的配置，网上已经有很多教程，这里就不再赘述了。具体可以教程官方文档： [Support Universal Links](https://developer.apple.com/library/archive/documentation/General/Conceptual/AppSearch/UniversalLinks.html#//apple_ref/doc/uid/TP40016308-CH12-SW1)、[Supporting Universal Links in Your App](https://developer.apple.com/documentation/xcode/supporting-universal-links-in-your-app)。
 
-![iOSUniversalLink-19.jpeg](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5a7c55f0bd584537b12cb38cad99b920~tplv-k3u1fbpfcp-watermark.image?)
+![iOSUniversalLink-19](https://ihtcboy.com/images/2021-iOSUniversalLink-19.jpeg)
 
-![iOSUniversalLink-20.jpeg](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2d76277e59d744b4a49e7db766e8e0b6~tplv-k3u1fbpfcp-watermark.image?)
+![iOSUniversalLink-20](https://ihtcboy.com/images/2021-iOSUniversalLink-20.jpeg)
 
-![iOSUniversalLink-21.jpeg](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9ad23c0b18d64e5c8bd41004c9b0d546~tplv-k3u1fbpfcp-watermark.image?)
+![iOSUniversalLink-21](https://ihtcboy.com/images/2021-iOSUniversalLink-21.jpeg)
 
-![iOSUniversalLink-22.jpeg](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/299842f4aa7d4f81a6a674454fffdcfb~tplv-k3u1fbpfcp-watermark.image?)
+![iOSUniversalLink-22](https://ihtcboy.com/images/2021-iOSUniversalLink-22.jpeg)
 
 
 
@@ -141,20 +139,20 @@ Universal Link 优点，主要有 4 个：
 虽然苹果提供 [https://search.developer.apple.com/appsearch-validation-tool/](https://search.developer.apple.com/appsearch-validation-tool/) 网页让开发者检查 Universal Link 配置是否正常，但是检查不正常的链接，Universal Link 可能是正常的。最大的坑就是必须要跨域，比如配置 Universal Link 链接为：`https://applink.app.com`，那么不能直接在页面中调用此链接来唤起 App，必然是其它二级域名，所以，一般 Universal Link 配置链接是用一个单独的二级域名，与业务域名分开。
 
 最后，最常用的检查配置是否正常的方式有2个：
-![iOSUniversalLink-25.jpeg](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8b01daa0858d46b296205925101165c3~tplv-k3u1fbpfcp-watermark.image?)
+![iOSUniversalLink-25](https://ihtcboy.com/images/2021-iOSUniversalLink-25.jpeg)
 
 
 #### Universal Link 特性回顾
 
 最后，回顾一下，Universal Link 这几年以来的新特性。
 
-![iOSUniversalLink-26.jpeg](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/52f8ba067f6b42db85a40cb48676fcbe~tplv-k3u1fbpfcp-watermark.image?)
+![iOSUniversalLink-26](https://ihtcboy.com/images/2021-iOSUniversalLink-26.jpeg)
 在 2015 年 iOS 9 推出 Universal Link 功能，在 2017 年在 tvOS 端推出。
 
-![iOSUniversalLink-27.jpeg](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3ac40f994b0b4d17a07b3002fea8191d~tplv-k3u1fbpfcp-watermark.image?)
+![iOSUniversalLink-27](https://ihtcboy.com/images/2021-iOSUniversalLink-27.jpeg)
 直到 2019年，支持精细化地址匹配，可以多个 App 共用一套配置、路径等。
 
-![iOSUniversalLink-28.jpeg](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/deeff3624a054cfa92e44e9ea563d462~tplv-k3u1fbpfcp-watermark.image?)
+![iOSUniversalLink-28](https://ihtcboy.com/images/2021-iOSUniversalLink-28.jpeg)
 举例来说，可以通配符匹配。
 
 - `*`：星号匹配 0 个或多个字符，并且贪婪地匹配。它将匹配尽可能多的字符。
@@ -162,39 +160,39 @@ Universal Link 优点，主要有 4 个：
 - `?*`：要匹配至少一个字符，请使用问号，后跟星号。
 
 
-![iOSUniversalLink-29.jpeg](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c76ca41cbe514975a67231b4e7c11aef~tplv-k3u1fbpfcp-watermark.image?)
+![iOSUniversalLink-29](https://ihtcboy.com/images/2021-iOSUniversalLink-29.jpeg)
 
 支持 macOS 10.15 以上，需要注意，Mac 的 App，如果是从 Mac AppStore 下载的 App，默认Universal Link 已经生效，而开发者自己分发的 App 则至少需要打开一次之后才能生效。
 
-![iOSUniversalLink-30.jpeg](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/38ee9fcc96864be68d15cdf57f3a89cb~tplv-k3u1fbpfcp-watermark.image?)
+![iOSUniversalLink-30](https://ihtcboy.com/images/2021-iOSUniversalLink-30.jpeg)
 2020 年，苹果发布了 SwiftUI，跨平台开发的 UI 框架（支持 iOS、macOS、tvOS、watchOS），所以，如果自然的也要支持 watchOS 啦。需要注意的是，如果 Universal Link 无效，则 watchOS      不能处理，会提示错误信息。因为虽然从 watchOS 5 开始支持 WebKit，但至今 watchOS 还没有内置 Safari 浏览器。哈哈，不知道大家是否期待支持~
 
 
-![iOSUniversalLink-31.jpeg](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c4156937cc3942219eab2f921031956f~tplv-k3u1fbpfcp-watermark.image?)
+![iOSUniversalLink-31](https://ihtcboy.com/images/2021-iOSUniversalLink-31.jpeg)
 同时，支持大小写忽略的模式匹配，通过配置 `"caseSensitive": false`，来取消大小写敏感。解决前端不同页面或者大小写的问题。
 
 
-![iOSUniversalLink-32.jpeg](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e80f31f98f7d4c47ba2b19b29ab3b024~tplv-k3u1fbpfcp-watermark.image?)
+![iOSUniversalLink-32](https://ihtcboy.com/images/2021-iOSUniversalLink-32.jpeg)
 Unicode 模式的支持，比如中文 `蚂蚁上树`，默认情况下需要 ulr encode 才能读取。通过 `"percentEncoded": false` 这样用什么语言都直接显示，方便显示和维护，也减少了链接长度。
 
 
-![iOSUniversalLink-33.jpeg](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2283bd2fb1ed45f1b94d0638dbde952c~tplv-k3u1fbpfcp-watermark.image?)
+![iOSUniversalLink-33](https://ihtcboy.com/images/2021-iOSUniversalLink-33.jpeg)
 最后一个重点功能，替代变量的支持，比如 App 在多国家地区出售不同产品，那么可能某个国家或地区不销售某个产品，放在以前就需要写一堆的` /en_US/`、 `/fr_CA/` 不能的语言地区标识。
 
-![iOSUniversalLink-34.jpeg](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/08bef4825f7544a281f08932cea3331a~tplv-k3u1fbpfcp-watermark.image?)
+![iOSUniversalLink-34](https://ihtcboy.com/images/2021-iOSUniversalLink-34.jpeg)
 现在，苹果默认提供了常用的变量，举例来说，用 `$(alpha)` 来表示 `[ "A","a",
 "B", "b", "C", ... "Z", "z" ]` 内任意的字符。其它同理。
 
-![iOSUniversalLink-35.jpeg](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5c86f9d06a764538b203ae5898a80915~tplv-k3u1fbpfcp-watermark.image?)
+![iOSUniversalLink-35](https://ihtcboy.com/images/2021-iOSUniversalLink-35.jpeg)
 举例来说，通过字段 `"substitutionVariables":` 来自定义字符集，然后可以套用到 `"components":` 里，用 `$()` 来包含替换。
 
 如上图中，`"/$(lang)_CA/$(Canadian food)/", "percentEncoded": false` 表示匹配任意语言的加拿大下的 `Canadian food` 包含的产品，并且是用 Unicode 编码，因为最后一个产品是 `"tête-de-violon"` 非英文字符。同理，第二个包含 `"exclude": true`，表示排除此路径。
 
-![iOSUniversalLink-36.jpeg](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3efd6541a7484546af6ed1257f29b8b6~tplv-k3u1fbpfcp-watermark.image?)
+![iOSUniversalLink-36](https://ihtcboy.com/images/2021-iOSUniversalLink-36.jpeg)
 原来的 Universal Link 默认是用户安装应用时就通过 App 里配置的 URL 请求 `apple-app-site-association` 配置文件内容。但可能因为开发者网站的部署距离用户远近不同，导致访问速度无法保障，所以，苹果改为通过 Apple CDN 来请求 apple-app-site-association 配置文件并缓存起来，来针对不用地区的用户，加速配置文件的获取。
 
 
-![iOSUniversalLink-37.jpeg](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/43d33cbe5aba46e4ae481674b577919c~tplv-k3u1fbpfcp-watermark.image?)
+![iOSUniversalLink-37](https://ihtcboy.com/images/2021-iOSUniversalLink-37.jpeg)
 最后，苹果提供绕过 CDN 下载配置文件的方法，也是方便开发者进行测试 Universal Link。具体来说，就是在设置中的 `Developer` 下 `Associated Domains Development`，然后在 Xcode 配置 `associated-domains` Universal Link 链接时，拼接 `?mode=developer`，这样表示开发者模块，此时的 Universal Link 可以是内网部署，不需要外网部署，非常的方便调试。
 
 
@@ -202,38 +200,38 @@ Unicode 模式的支持，比如中文 `蚂蚁上树`，默认情况下需要 ul
 
 最后，我们从产品的角度来总结一下 `URL Scheme` 和 `Universal Link` 的功能发展。
 
-![iOSUniversalLink-39.jpeg](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9e78fbeb5b754894997adcbbd88e271a~tplv-k3u1fbpfcp-watermark.image?)
+![iOSUniversalLink-39](https://ihtcboy.com/images/2021-iOSUniversalLink-39.jpeg)
 
 URL Scheme 从最初的打破 App 之间无联系的沟通，到效率工具 App 的重度依赖，其中 Workflow App 当年最为流行，后来被苹果收购。正好刚刚说的，被苹果收购后可以获取更多的系统级权限，其实对于效率类 App 是非常利好的！后来，苹果把 Workflow 改名 Shortcuts（捷径），并且能与 Siri 交互。
 
 
-![iOSUniversalLink-40.jpeg](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fc6ca235e0164263be2d40966f00f5fc~tplv-k3u1fbpfcp-watermark.image?)
+![iOSUniversalLink-40](https://ihtcboy.com/images/2021-iOSUniversalLink-40.jpeg)
 举例来说，Shortcuts 能读取 NFC 卡的权限，并且可以打开所有的 App！不需要依赖 URL Scheme，打开所有的 App！所以，URL Scheme 的作用，对于 Shortcuts 来说，根本不需要依赖了。
 
 
-![iOSUniversalLink-41.jpeg](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/890db8adf548465fbd739ec63d9f08cd~tplv-k3u1fbpfcp-watermark.image?)
+![iOSUniversalLink-41](https://ihtcboy.com/images/2021-iOSUniversalLink-41.jpeg)
 当然，快捷打开 App，不得不说到 3D Touch，可能从苹果来说，这是一个创新的交互方式，但是用户并没有习惯起来。隐藏式的交互设计，客观来讲，对于用户体验确实不友好。
 
-![iOSUniversalLink-42.jpeg](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4588b4d90578461ea3b7ff15fb2e237f~tplv-k3u1fbpfcp-watermark.image?)
+![iOSUniversalLink-42](https://ihtcboy.com/images/2021-iOSUniversalLink-42.jpeg)
 当然，最后 URL Scheme 还是会长存！因为第三方 App 之间无法直接交互。除了交互，就是打开 App 某个功能或者路径，利用 PWA 添加到主屏幕也是一种方案，但是对于一般用户需要教导，不太好推广。
 
 
-![iOSUniversalLink-43.jpeg](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/296bdbdba04e43ad95953757c6cf8579~tplv-k3u1fbpfcp-watermark.image?)
+![iOSUniversalLink-43](https://ihtcboy.com/images/2021-iOSUniversalLink-43.jpeg)
 最后，Universal Link 总结来说，通用性、安全性、灵活性、隐私性，对于开发者来说，其他人无法伪造，所以的配置都由开发者来掌握。简单来说，通过域名和后台控制，可以随时调整，对用户无影响。
 
 
-![iOSUniversalLink-44.jpeg](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1ef264711d594915aa06cc9a85947ec8~tplv-k3u1fbpfcp-watermark.image?)
+![iOSUniversalLink-44](https://ihtcboy.com/images/2021-iOSUniversalLink-44.jpeg)
 举例来说，知乎在 web 页面，利用 Universal Link 显示 “App 内打开”，而顶部是利用 [Smart App Banners](https://developer.apple.com/documentation/webkit/promoting_apps_with_smart_app_banners) 在用户安装 App 和未安装 App 时，展示打开或者显示（点击时打开 App，或者打开 AppStore 显示）。当然，知乎还用了 URL Scheme 兜底，最后，就是显示 Universal Link 的引导安装的 web 落地页面。
 
-![iOSUniversalLink-45.jpeg](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1d61ec59f68f439b9794f09686f028d6~tplv-k3u1fbpfcp-watermark.image?)
+![iOSUniversalLink-45](https://ihtcboy.com/images/2021-iOSUniversalLink-45.jpeg)
 
 Handoff 也需要使用 Universal Link 的配置文件来验证权限，Shared Web Credentials 也是优化 web 和 app 之间共享账号登陆。
 
-![iOSUniversalLink-46.jpeg](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9fad60c9659f4fe1bd36e5fc3846b7ed~tplv-k3u1fbpfcp-watermark.image?)
+![iOSUniversalLink-46](https://ihtcboy.com/images/2021-iOSUniversalLink-46.jpeg)
 
 去年苹果推出的小程序 [App Clips](https://developer.apple.com/videos/play/wwdc2020/10146/)（轻 App）也是使用 apple-app-site-association 来配置权限。
 
-![iOSUniversalLink-47.jpeg](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c92d7fc35e5046ae842ee41ce9a437bf~tplv-k3u1fbpfcp-watermark.image?)
+![iOSUniversalLink-47](https://ihtcboy.com/images/2021-iOSUniversalLink-47.jpeg)
 
 今年推出的 [in-app events](https://developer.apple.com/videos/play/wwdc2021/10171) AppStore 商店 App 内事件功能，也需要配置 Universal Link 。
 
@@ -266,3 +264,6 @@ Handoff 也需要使用 Universal Link 的配置文件来验证权限，Shared W
 * [Promoting Apps with Smart App Banners | Apple Developer Documentation](https://developer.apple.com/documentation/webkit/promoting_apps_with_smart_app_banners)
 * [Configure and link your App Clips - WWDC20 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2020/10146/)
 * [Meet in-app events on the App Store - WWDC21 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2021/10171)
+* [Universal Links 新鮮事. iOS 13, iOS 14 Universal Links… | by ZhgChgLi](https://medium.com/zrealm-ios-dev/universal-links-%E6%96%B0%E9%AE%AE%E4%BA%8B-12c5026da33d)
+
+> 注：如若转载，请注明来源。
