@@ -2,17 +2,17 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/HTC/.oh-my-zsh"
+export ZSH="/Users/htc/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
+# a theme from this variable instead of looking in $ZSH/themes/
 # If set to an empty array, this variable will have no effect.
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
@@ -26,8 +26,14 @@ ZSH_THEME="robbyrussell"
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
 
+# Uncomment the following line to automatically update without prompting.
+# DISABLE_UPDATE_PROMPT="true"
+
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
+
+# Uncomment the following line if pasting URLs and other text is messed up.
+# DISABLE_MAGIC_FUNCTIONS="true"
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -39,6 +45,8 @@ ZSH_THEME="robbyrussell"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
+# Caution: this setting can cause issues with multiline prompts (zsh 5.7.1 and newer seem to work)
+# See https://github.com/ohmyzsh/ohmyzsh/issues/5765
 # COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
@@ -58,12 +66,14 @@ ZSH_THEME="robbyrussell"
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
 # Which plugins would you like to load?
-# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git zsh-autosuggestions
+  git
+  z
+  wd
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -85,12 +95,6 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
-
-#mysql
-PATH=$PATH:/usr/local/mysql/bin
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -99,6 +103,7 @@ PATH=$PATH:/usr/local/mysql/bin
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
 
 alias lpi="lipo -i"
 alias hdg="hexo clean; hexo deploy -g"
@@ -142,17 +147,54 @@ export MonkeyDevDeviceIP=
 export PATH=/opt/MonkeyDev/bin:$PATH
 
 # JAVA
-export JAVA_HOME=$(/usr/libexec/java_home)
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home
+export CLASSPAHT=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+export PATH=$JAVA_HOME/bin:$PATH:
+#export JAVA_HOME=$(/usr/libexec/java_home)
 
 # Android dev
 export PATH=${PATH}:/Users/HTC/Library/Android/sdk/platform-tools
 export PATH=${PATH}:/Users/HTC/Library/Android/sdk/tools
+export PATH=${PATH}:/Users/HTC/Library/Android/sdk/tools/bin/sdkmanager
 
 # Flutter 
 export PATH=${PATH}:/Users/HTC/Documents/Programing/Flutter/flutter/bin
 
+#mysql
+export PATH=$PATH:/usr/local/mysql/bin
 
+#ARM 版的 Homebrew
+export PATH=$PATH:/opt/homebrew/bin
 
+# Homebrew
+alias abrew='/opt/homebrew/bin/brew' # ARM Homebrew
+alias ibrew='arch -x86_64 /usr/local/bin/brew' # X86 Homebrew
+alias export PATH=/opt/homebrew/bin:$PATH
 
+# CocoaPods
+alias ipod='arch -x86_64 pod'
+alias pov='pod --version'
+alias poi='pod install'
+alias pou='pod update'
+alias pll='pod lib lint --allow-warnings --sources="https://code.37ops.com/sy_ios_pods/TSMGPods/TSMGPodSpecs.git"'
+alias prp='pod repo push --allow-warnings TSMGSpecs '
 
+# TSMG
+alias gapu="sh /Users/HTC/Documents/Programing/37/TS/TSMGScript/Git/TS-Components-Git-Pull.sh"
+alias tspu="cd /Users/HTC/Documents/Programing/37/TS; sh /Users/HTC/Documents/Programing/37/TS/TSMGScript/Git/TS-Components-Git-Pull.sh"
 
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+#mysql-client
+export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+#mysql-client compilers
+export LDFLAGS="-L/usr/local/opt/mysql-client/lib"
+export CPPFLAGS="-I/usr/local/opt/mysql-client/include"
+#mysql-client pkg-config
+export PKG_CONFIG_PATH="/usr/local/opt/mysql-client/lib/pkgconfig"
+
+# tidevice https://github.com/alibaba/taobao-iphone-device
+alias iphone='tidevice'
