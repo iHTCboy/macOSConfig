@@ -198,3 +198,7 @@ export PKG_CONFIG_PATH="/usr/local/opt/mysql-client/lib/pkgconfig"
 
 # tidevice https://github.com/alibaba/taobao-iphone-device
 alias iphone='tidevice'
+
+# WeChat Duplicator
+alias opwx='cd /Applications/WeChat.app/Contents/MacOS;./WeChat'
+
