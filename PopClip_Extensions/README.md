@@ -21,12 +21,12 @@ async getAuthButtonList() {
 
 After formatting with the code plugin:
 ```
-```
+\```
 async getAuthButtonList() {
   const { data } = await getAuthButtonListApi();
   this.authButtonList = data;
 }
-```
+\```
 ```
 
 - `JSONer.popclipext`：格式 Json 字符串为可读的 JSON 格式。
